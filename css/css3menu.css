@@ -1,0 +1,18 @@
+﻿#navcss3 ul li:hover a,#navcss3 li:hover li a{color:#CF0;line-height:35px;width:150px}
+#navcss3{margin:0;line-height:100%;padding:0}
+#navcss3 .topmainmenu_l{float:left}
+#navcss3 .topmainmenu_r{float:left}
+#navcss3 li{float:left;position:relative;list-style:none}
+#navcss3 a{display:block;background-repeat:no-repeat;text-align:center}
+#navcss3 a:hover{background-repeat:no-repeat;text-decoration:none}
+#navcss3 ul li:hover a,#navcss3 li:hover li a{background-image:none;color:#000;margin:0;width:180px;line-height:25px;background-color:#FFF;text-align:left;font-weight:400;font-size:small;border-color:#EAEAEA;border-style:dotted;border-width:0 0 1px}
+#navcss3 ul li:hover a:hover{background-color:#666}
+#navcss3 ul a:hover{color:#fff!important;background-color:#C30;padding:0}
+#navcss3 li:hover >ul{display:block}
+#navcss3 ul{display:none;margin:5px;padding:5px;width:180px;position:absolute;border:solid 1px #b4b4b4;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;background-color:#FFF}
+#navcss3 ul li{float:none;margin:0;padding:0}
+#navcss3 ul ul{left:180px;top:0}
+#navcss3:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+#navcss3{display:inline-block}
+html[xmlns] #navcss3{display:block}
+* html #navcss3{height:1%}

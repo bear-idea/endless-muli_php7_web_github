@@ -1,0 +1,105 @@
+﻿@charset "utf-8";
+/*************************************
+ *  框架樣式設定
+**************************************/
+/* 外框 */
+#wrapper {
+}
+/*-----------------------------------*/
+
+/* 頁首 */
+#wrapper #header {
+}
+#wrapper #header #context{
+	/*background-color: #E6FFE8;*/
+}
+/*-----------------------------------*/
+
+/* 橫幅 */
+#wrapper #banner {
+}
+#wrapper #banner #context{
+	/*background-color: #E6FFE8;*/
+}
+/*-----------------------------------*/
+
+/* 左邊欄位 */
+#wrapper #Left_column {
+}
+#wrapper #Left_column #context{
+	/*background-color: #E6FFE8;*/
+}
+/*-----------------------------------*/
+
+/* 右邊欄位容器 */
+#wrapper #Content_containter {
+}
+/*-----------------------------------*/
+
+/* 主要內容欄位 */
+#wrapper #Content_containter #Main_content {
+}
+
+#wrapper #Content_containter #Main_content #context {
+	/*background-color: #E6FFE8;*/
+}
+/*-----------------------------------*/
+
+/* 右邊欄位 */
+#wrapper #Content_containter #Rght_column {
+}
+#wrapper #Content_containter #Rght_column #context{
+	/*background-color: #E6FFE8;*/
+}
+/*-----------------------------------*/
+
+/* 頁尾 */
+#wrapper #footer {
+}
+
+#wrapper #footer #context{
+	background-color: #E6FFE8;
+}
+/*-----------------------------------*/
+
+/* 圓角 */
+#roundedrectangle{width:100%;}
+#roundedrectangle .topa1{margin:0 4px;background:#B0BEC7;height:1px;overflow:hidden;}
+#roundedrectangle .topa2{margin:0 2px;border:1px solid #B0BEC7;border-width:0 2px;background:#E1E7E9;height:1px;overflow:hidden;}
+#roundedrectangle .topa3{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle .topa4{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle .roundwrapper{background:#E1E7E9; border:1px solid #B0BEC7; border-width:0 1px}
+#roundedrectangle .roundheader{font-size:12px; font-weight:bolder; font-family:Verdana; color:#258; padding:2px 10px 5px;}
+#roundedrectangle .roundwrapper .roundcontext{background:#FFF; margin:0 3px; font-size:11px; font-family:Verdana; color:.333; padding:5px 10px; overflow:hidden;}
+#roundedrectangle .bottoma1{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle .bottoma2{{margin:0 1px; border:1px solid #B0BEC7; border-width:0 2px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle .bottoma3{{margin:0 2px; border:1px solid #B0BEC7; border-width:0 2px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle .bottoma4{{margin:0 4px; background:#B0BEC7; height:1px; overflow:hidden;}
+
+#roundedrectangle_Lcolumn{width:0px;}
+#roundedrectangle_Lcolumn .Ltopa1{margin:0 4px;background:#B0BEC7;height:1px;overflow:hidden;}
+#roundedrectangle_Lcolumn .Ltopa2{margin:0 2px;border:1px solid #B0BEC7;border-width:0 2px;background:#E1E7E9;height:1px;overflow:hidden;}
+#roundedrectangle_Lcolumn .Ltopa3{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Lcolumn .Ltopa4{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Lcolumn .Lroundwrapper{background:#E1E7E9; border:1px solid #B0BEC7; border-width:0 1px}
+#roundedrectangle_Lcolumn .Lroundheader{font-size:12px; font-weight:bolder; font-family:Verdana; color:#258; padding:2px 10px 5px;}
+#roundedrectangle_Lcolumn .Lroundwrapper .Lroundcontext{background:#FFF; margin:0 3px; font-size:11px; font-family:Verdana; color:.333; padding:5px 10px; overflow:hidden;}
+#roundedrectangle_Lcolumn .Lbottoma1{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Lcolumn .Lbottoma2{{margin:0 1px; border:1px solid #B0BEC7; border-width:0 2px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Lcolumn .Lbottoma3{{margin:0 2px; border:1px solid #B0BEC7; border-width:0 2px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Lcolumn .Lbottoma4{{margin:0 4px; background:#B0BEC7; height:1px; overflow:hidden;}
+
+#roundedrectangle_Rcolumn{width:100%;}
+#roundedrectangle_Rcolumn .Rtopa1{margin:0 4px;background:#B0BEC7;height:1px;overflow:hidden;}
+#roundedrectangle_Rcolumn .Rtopa2{margin:0 2px;border:1px solid #B0BEC7;border-width:0 2px;background:#E1E7E9;height:1px;overflow:hidden;}
+#roundedrectangle_Rcolumn .Rtopa3{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Rcolumn .Rtopa4{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Rcolumn .Rroundwrapper{background:#E1E7E9; border:1px solid #B0BEC7; border-width:0 1px}
+#roundedrectangle_Rcolumn .Rroundheader{font-size:12px; font-weight:bolder; font-family:Verdana; color:#258; padding:2px 10px 5px;}
+#roundedrectangle_Rcolumn .Rroundwrapper .Rroundcontext{background:#FFF; margin:0 3px; font-size:11px; font-family:Verdana; color:.333; padding:5px 10px; overflow:hidden;}
+#roundedrectangle_Rcolumn .Rbottoma1{margin:0 1px; border:1px solid #B0BEC7; border-width:0 1px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Rcolumn .Rbottoma2{{margin:0 1px; border:1px solid #B0BEC7; border-width:0 2px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Rcolumn .Rbottoma3{{margin:0 2px; border:1px solid #B0BEC7; border-width:0 2px; background:#E1E7E9; height:1px; overflow:hidden;}
+#roundedrectangle_Rcolumn .Rbottoma4{{margin:0 4px; background:#B0BEC7; height:1px; overflow:hidden;
+
+

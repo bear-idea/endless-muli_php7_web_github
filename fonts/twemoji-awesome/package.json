@@ -1,0 +1,70 @@
+{
+  "_from": "twemoji-awesome",
+  "_id": "twemoji-awesome@1.0.6",
+  "_inBundle": false,
+  "_integrity": "sha1-MWfDq7lXU9qZcpH48cU8usYYUqU=",
+  "_location": "/twemoji-awesome",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "twemoji-awesome",
+    "name": "twemoji-awesome",
+    "escapedName": "twemoji-awesome",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/twemoji-awesome/-/twemoji-awesome-1.0.6.tgz",
+  "_shasum": "3167c3abb95753da997291f8f1c53cbac61852a5",
+  "_spec": "twemoji-awesome",
+  "_where": "D:\\AppServ\\www\\test",
+  "author": {
+    "name": "Angel Cruz",
+    "email": "me@abr4xas.org"
+  },
+  "bugs": {
+    "url": "https://github.com/abr4xas/twemoji-awesome/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Elle Kasai",
+      "email": "elle.kasai@gmail.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "Like Font Awesome, but for Twitter Emoji",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0"
+  },
+  "homepage": "https://github.com/abr4xas/twemoji-awesome#readme",
+  "keywords": [
+    "emoji",
+    "twitter",
+    "font",
+    "awesome"
+  ],
+  "license": "MIT",
+  "main": "index.html",
+  "name": "twemoji-awesome",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abr4xas/twemoji-awesome.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.6"
+}

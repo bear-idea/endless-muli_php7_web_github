@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+.loginbody{background-color:#d6ded4;background-repeat:repeat-x}
+form#ADlogin{width:100%}
+form#ADlogin .noimpword{color:#999;font-size:small}
+form#ADlogin table{margin-right:auto;margin-left:auto}
+form#ADlogin .Input_field{width:150px;background-image:url(../images/form_bk_input.jpg);background-repeat:repeat-x;color:#406F6B;border:1px solid #A7BCA3}
+input.AccountPswWidth{width:200px}
+div.TipMessage{background-color:#D1EFB4;border:3px solid #99DC56;font-weight:700;color:#548B1D;text-align:center;font-size:medium}
+.TipTypeStyle{font-weight:700;color:#06C}
+.MenuViewPage a:hover{background-color:#C5CCC1}
+.LineHight5px{height:5px}
+.cm_wrp_title{font-weight:bolder;padding-top:5px;padding-bottom:5px;margin-bottom:5px;border-color:#999;border-style:dotted;border-width:1px 0}
+#page_break .collapse{display:none}
+#page_break .num{padding:10px 0;text-align:center}
+#page_break .num li{display:inline;margin:0 2px;padding:3px 5px;border:1px solid #FF7300;background-color:#fff;color:#FF7300;text-align:center;cursor:pointer;font-family:Arial;font-size:12px;overflow:hidden}
+#page_break .num li.on{background-color:#FF7300;color:#fff;font-weight:700}
+.div_table-cell, .nailthumb-container{overflow:hidden;transition:all .4s ease}
+.div_table-cell a img, .nailthumb-container a img{transition:all .2s linear}
+.div_table-cell:hover, .nailthumb-container:hover{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);transform:rotate(0deg)}
+.div_table-cell:hover a img, .nailthumb-container:hover a img{transform:scale(1.1)}

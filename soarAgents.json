@@ -1,0 +1,12 @@
+// JSON Document
+
+{
+    "entryPoints": [
+        {
+            "path": "agent1/load.soar",
+            "name": "agent1"
+        },
+    ],
+    "active": "agent1",
+    "rhsFunctions": ["force-learn"]
+}

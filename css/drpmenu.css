@@ -1,0 +1,73 @@
+ul.drp_container{
+	/* The topmost UL */
+	width:100%;
+	padding-left:5px;
+}
+
+ul.drp_container li{
+	list-style: none;
+}
+
+li.menu_drp{
+	/* The main list elements */
+	padding:5px 0;
+	width:100%;
+}
+
+li.menu_drp ul {
+	padding-left:px;
+}
+
+li.button{
+	padding-left:5px;
+}
+
+li.button a{
+	/* The section titles */
+	display:block;
+	font-family:BPreplay,Arial,Helvetica,sans-serif;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	padding: 5px;
+}
+
+li.button a:hover{
+	/* Removing the inherited underline from the titles */
+	text-decoration:none;
+}
+
+li.button a span{
+	/* This span acts as the right part of the section's background */
+	position:absolute;
+	right:0;
+	top:0;
+	width:4px;
+	display:block;
+}
+
+/* Setting up different styles for each section color */
+
+.dropdown{
+	/* The expandable lists */
+	display:none;
+	padding-top:5px;
+	list-style: none;
+}
+
+.dropdown li{
+	background: rgba(255, 255, 255, 0.3) !important;  
+    background: #FFF; 
+    filter: alpha(opacity=30); 
+	padding:5px;
+	background: #fff; border: 4px solid #fff; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	display:none;
+}
+
+
+
+
+.clear{
+	clear:both;
+}
+

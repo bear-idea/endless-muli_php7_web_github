@@ -1,0 +1,29 @@
+<?php require($TplPath . "/layout/board/layout_board_middle_title_top.php"); ?>
+<div class="ct_title">
+  <h1 style="font-size:large" class="<?php echo $ClassMaquree ?>">
+    <?php if($TmpTitleBgImage != ''){ ?>
+    <span class="titlesicon" data-scroll-reveal="enter top"><img src="<?php if($SiteBaseUrlOuter != "" && $TmpTitleBgWebName == 'playweb') { echo $SiteImgUrlOuter; } else { echo $SiteImgUrl; } ?><?php echo $TmpTitleBgWebName; ?>/image/tmpbackground/<?php echo $TmpTitleBgImage; ?>" /></span>
+    <?php } ?>
+    <span class="titlesicon" data-scroll-reveal="enter right"><?php echo $row_data['title']; ?></span></h1>
+</div>
+<?php require($TplPath . "/layout/board/layout_board_middle_title_bottom.php"); ?>
+<?php if ($rows_moduleCount[$Tp_Page] > 0 ) { ?>
+<?php require($TplPath . "/layout/board/layout_board_middle_content_top.php"); ?>
+<div class="post_content padding-3">
+	<?php if($rows_moduleCount[$Tp_Page] > 1) { ?>
+    <span style="float:right; margin-right:5px;">
+		<?php require($TplPath . '/layout/component/layout_component_selectbox.php'); ?>
+	</span>
+	<?php } ?>
+	<div class="clearfix"></div>
+	<?php echo $row_data['content']; ?>
+  	<div class="pull-left"><?php require("app/other/sharelink/sharelink.php"); ?></div>
+  	<div class="clearfix"></div>
+</div>
+<?php require($TplPath . "/layout/board/layout_board_middle_content_bottom.php"); ?>
+<?php } ?>
+<?php 
+if ($rows_moduleCount[$Tp_Page] == 0 ) {
+	require($TplPath . '/view/error_component_404.php');
+} 
+?>

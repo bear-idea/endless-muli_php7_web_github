@@ -1,0 +1,1 @@
+<?php if ($SitePhone != "" || $SiteCell != "") { ?><a href="tel:<?php if($SitePhone != "") {echo $SitePhone;}else if ($SiteCell != "") {echo $SiteCell;} ?>" class="button orange middle"><i class="fa fa-phone"></i> 撥打電話給我們</a><?php } ?>

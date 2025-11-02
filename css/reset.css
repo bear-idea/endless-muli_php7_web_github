@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, 
+img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b,  
+center, dl, dt, dd, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td{margin:0; padding:0}
+body, button, input, select, textarea{font-family: /*"cwTeXHei",*/ "微軟正黑體", "Tahoma", "Microsoft JhengHei", "微软雅黑", "Microsoft YaHei", "メイリオ", "Meiryo", "新細明體", "PMingLiU", "細明體", "MingLiU", "宋体", "simsun", "Times New Roman", sans-serif;}
+address, cite, dfn, em, var{}
+code, kbd, pre, samp{font-family:courier new,courier,monospace}
+small{font-size:12px}
+ul, ol{list-style:none}
+/*sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}*/
+fieldset, img{border:0}
+button, input, select, textarea{font-size:100%}
+
+table{}
+
+html, body{height:100%}
+
+#Bk_Anime_Wrapper, #Main_Wrapper, #Middle_Wrapper, #wrapper, #Bk_Home_Body_Wrapper, #Bk_Home_Anime_Wrapper, #Bk_Home_Bottom_Wrapper{ min-height:100%}
+
+html{}
+
+img{border:0px; vertical-align:bottom}
+
+ol, li, ul{/*margin:0px; padding:0px*/}
+
+body{line-height:1.5;}
+
+a{ outline:none;  hlbr:expression(this.onFocus=this.blur()); text-decoration:none}
+
+a:link{}
+a:visited{}
+a:hover{text-decoration:underline}
+
+hr{height:1px; border-top-width:1px; border-top-style:solid; border-right-style:none; border-bottom-style:none; border-left-style:none; border-top-color:#EAEAEA;}
+
+ol{list-style-type:decimal}
+
+ul{list-style-type:disc}
+
+ol, ul{list-style-type: disc; list-style-position: inside; }
+
+li {display: list-item }
+
+caption, th, td {font-weight: normal;}

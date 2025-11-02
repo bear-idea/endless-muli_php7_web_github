@@ -1,0 +1,15 @@
+.fontResizer{width:96px; float:right}
+.fontResizer a{  float:left;   width:23px;   height:27px;   text-decoration:none}
+.fontResizer a:hover{text-decoration:none}
+.fr{float:right}
+.smallFont img, .medFont img, .largeFont img, .sulargeFont img{width:23px; height:27px; margin-left:0px; margin-right:0px}
+
+.smallFont{background:url(../images/fontsize_1_off.png) no-repeat}
+.medFont{background:url(../images/fontsize_2_off.png) no-repeat}
+.largeFont{background:url(../images/fontsize_3_off.png) no-repeat}
+
+.scurFont{background:url(../images/fontsize_1_on.png) no-repeat}
+.mcurFont{background:url(../images/fontsize_2_on.png) no-repeat}
+.lcurFont{background:url(../images/fontsize_3_on.png) no-repeat}
+
+.curFont{background:#EEEEF7}

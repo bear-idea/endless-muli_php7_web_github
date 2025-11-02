@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordMultiLeftMenu_l2" value="name:item_id;datatype:int,name:subitem_id;datatype:int,name:list_id;datatype:int,name:itemname;datatype:string,name:level;datatype:int,name:endnode;datatype:string,name:indicate;datatype:int,name:sortid;datatype:int,name:lang;datatype:string,name:dftpage;datatype:string,name:userid;datatype:int" />
+	<infoitem key="UD_RecordMultiLeftMenu_l3" value="name:item_id;datatype:int,name:subitem_id;datatype:int,name:list_id;datatype:int,name:itemname;datatype:string,name:level;datatype:int,name:endnode;datatype:string,name:indicate;datatype:int,name:sortid;datatype:int,name:lang;datatype:string,name:dftpage;datatype:string,name:userid;datatype:int" />
+</info>

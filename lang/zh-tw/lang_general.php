@@ -1,0 +1,584 @@
+<?php 
+/* =================================================================================================================*/
+/*  共用
+/* =================================================================================================================*/
+/* ---------- 導覽列 ---------- */
+$Lang_Home = "首頁"; // 	首頁
+$Lang_Dfpage_Article = "文章"; // 	文章
+$Lang_Dfpage_Search = "文章搜尋"; // 	文章搜尋
+
+/* ---------- 錯誤判斷 ---------- */
+$Lang_Error_NoSearch = "目前尚無資料!!"; // 	目前尚無資料
+$Lang_Authcode_No = "抱歉!!您的帳號尚未認證!!您無權查看此區資料"; // 	抱歉!!您的帳號尚未認證!!您無權查看此區資料
+
+/* ---------- 下拉選單 ---------- */
+$Lang_Listitem_Select = "-- 選擇項目 --"; // -- 選擇項目 --
+$Lang_Select = "-- 選擇語系 --"; // -- 選擇語系 --
+
+/* ---------- 頁面導覽 ---------- */
+$Lang_PageNum = "頁數"; // 	頁數
+$Lang_Content_Count_Display = "顯示"; // 	顯示
+$Lang_Content_Count_Lots = "筆"; // 	筆
+$Lang_Content_Count_Total = "共計"; // 	共計
+$Lang_First = "第一頁"; // 第一頁
+$Lang_Next = "下一頁"; // 下一頁
+$Lang_Prev = "上一頁"; // 上一頁
+$Lang_Last = "最尾頁"; // 最尾頁
+$Lang_Form_Search = "搜尋"; // 	搜尋
+
+/* ---------- 計數器 ---------- */
+$Lang_Today_Visitors = "當日人次"; // 當日人次
+$Lang_Total_Visitors = "累計人次"; // 累計人次
+
+/* ---------- 頁尾 ---------- */
+$Lang_Footer_Tel = "電話"; // 電話
+$Lang_Footer_Fax = "傳真"; // 傳真
+$Lang_Footer_Cell = "行動"; // 行動
+$Lang_Footer_Addr = "地址"; // 地址
+
+/* ---------- 其他 ---------- */
+$Lang_BackPage = "回上一頁"; // 	回上一頁
+$Lang_Content_Title_More = "»更多"; // 	更多
+$Lang_Share = "分享:"; // 分享:
+$Lang_Share_To = "分享至:"; // 分享至:
+$Lang_And_To = "且"; // 且
+$Lang_Or_To = "或"; // 或
+
+/* ---------- 社群 ---------- */
+$Lang_Tab_Facebook_Reply = "Facebook回應"; // Facebook回應
+$Lang_Tab_Reply = "問答紀錄"; // 問答紀錄
+
+/* ---------- ???? ---------- */
+$Lang_Content_Title_Member = "會員專區"; // 	會員專區
+$Lang_Content_Title_Member_UserDate = "修改個人資料"; // 	修改個人資料
+$Lang_Content_Title_Member_Reg = "會員註冊"; // 	會員註冊
+$Lang_Random_Article = "隨機文章"; // 隨機文章
+$Lang_Mix_Article = "補充資料"; // 補充資料
+$Lang_Mix_Catalog = "下載"; // 下載
+
+/* ---------- 表單 ---------- */
+$Lang_Classify_Send_Unlock = "解鎖"; // 	解鎖
+$Lang_Classify_Send_Verify = "驗證"; // 	驗證
+$Lang_Classify_Send_Verify_Input = "輸入驗證碼"; // 	輸入驗證碼
+$Lang_Classify_Send_Verify_Tip = "將按鈕拖曳至右方解鎖"; // 	將按鈕拖曳至右方解鎖
+$Lang_Classify_Send_Verify_Unlock = "按鈕解鎖"; // 	按鈕解鎖
+$Lang_Classify_Send_Verify_Unlock_Refresh = "刷新驗證碼"; // 	刷新驗證碼
+$Lang_Classify_Send_OK = "確定送出"; // 	確定送出
+$Lang_Classify_Send_Cancer = "重新輸入"; // 	重新輸入
+$Lang_Member_Agree = "同意會員條款"; // 	同意會員條款
+$Lang_Classify_Next = "下一步"; // 	下一步
+$Lang_Classify_Prev = "上一步"; // 	上一步
+$Lang_Classify_Agree = "同意"; // 	同意
+$Lang_Classify_NoAgree = "不同意"; // 	不同意
+$Lang_Classify_Login = "登入"; // 	登入
+$Lang_Classify_Refill = "重填"; // 	重填
+$Lang_Classify_Need = "需要"; // 	需要
+$Lang_Classify_Informal = "不拘"; // 	不拘
+$Lang_Classify_Morning = "早上"; // 	早上
+$Lang_Classify_Afternoon = "下午"; // 	下午
+$Lang_Classify_Night = "晚上"; // 	晚上
+
+/* ---------- 錯誤訊息 ---------- */
+$Lang_Classify_Send_Error01 = "請選取有效的項目。"; // 	請選取有效的項目。
+$Lang_Classify_Send_Error02 = "請選取項目。"; // 請選取項目。。
+$Lang_Classify_Send_Error03 = "欄位不可為空。"; // 	欄位不可為空。
+$Lang_Classify_Send_Error04 = "請進行選取。"; // 請進行選取。
+$Lang_Classify_Send_Error05 = "格式無效。"; // 格式無效。
+$Lang_Classify_Send_Error06 = "高於所限制之字數。"; // 高於所限制之字數。
+$Lang_Classify_Send_Error07 = "低於所限制之字數。"; // 低於所限制之字數。
+$Lang_Classify_Send_Error08 = "輸入的日期格式錯誤。"; // 輸入的日期格式錯誤。
+$Lang_Classify_Send_Error09 = "請選取你的性別。"; // 請選取你的性別。
+$Lang_Classify_Send_Error10 = "輸入的值小於所需的最小值。"; // 輸入的值小於所需的最小值。
+
+
+$Lang_Classify_Context_Auth = "權限不足"; // 權限不足
+$Lang_Post_Message_Contact_CheckError = "驗證碼錯誤!!"; // 驗證碼錯誤!
+$Lang_Member_Now_No_Registered_Error = "抱歉!!目前暫不提供會員註冊功能!!";
+$Lang_Member_Beuse_Error = "你註冊的帳號或Mail已被使用!!請重新註冊!!"; // 你註冊的帳號或Mail已被使用!!請重新0註冊
+$Lang_Psw_Check_Error = "所輸入的值與密碼欄位不相符或未輸入密碼。"; // 所輸入的值與密碼欄位不相符或未輸入密碼
+
+/* ---------- 提示訊息 ---------- */
+$Lang_Psw_Re_Check_Tip = "再次確認您輸入的密碼。"; // 再次確認您輸入的密碼
+$Lang_Account_Input_Tip = "請輸入6-20字的帳號。"; // 請輸入6-20字的帳號。
+$Lang_Psw_Input_Tip = "請輸入6-20字的密碼。"; // 請輸入6-20字的密碼
+
+$Lang_Classify_Tip01 = "請確實填寫!!密碼忘記會以此信箱寄送!使用 Yahoo、hotmail 等免費信箱，密碼信有可能被誤判為垃圾信，請先至「垃圾信匣」查看。"; // 請確實填寫!!密碼忘記會以此信箱寄送!使用 Yahoo、hotmail 等免費信箱，密碼信有可能被誤判為垃圾信，請先至「垃圾信匣」查看。
+$Lang_Classify_Tip02 = "將發送認證信到此信箱!!"; // 將發送認證信到此信箱
+$Lang_Classify_Tip03 = "是否接收E-Mail及活動訊息"; // 是否接收E-Mail及活動訊息
+$Lang_Classify_Tip04 = "請輸入註冊時所輸入之E-mail"; // 請輸入註冊時所輸入之E-mail
+$Lang_Classify_Tip05 = "對不起!!資料庫中沒有您的會員E-mail，請回上一頁重新輸入。"; // 對不起!!資料庫中沒有您的會員E-mail，請回上一頁重新輸入。
+$Lang_Classify_Tip06 = "您的新密碼已經寄出到您的信箱，請收信後使用新帳號、密碼登入網站，謝謝。"; // 您的新密碼已經寄出到您的信箱，請收信後使用新帳號、密碼登入網站，謝謝。
+$Lang_Classify_Tip07 = "帳號或密碼錯誤!!請重新輸入!!"; // 帳號或密碼錯誤!!請重新輸入!!
+$Lang_Classify_Tip08 = "帳號尚未認證!!"; // 帳號尚未認證!!
+$Lang_Classify_Tip09 = "您的會員已認證成功!!請由此登入!!"; // 您的會員已認證成功!!請由此登入!
+$Lang_Classify_Tip10 = "註冊成功!!系統已寄發認證信!!請到您註冊之信箱取得認證信!!"; // 註冊成功!!系統已寄發認證信!!請到您註冊之信箱取得認證信!
+$Lang_Classify_Tip11 = "註冊成功!!需等待管理員審核寄發認證信!!"; // 註冊成功!!需等待管理員審核寄發認證信
+$Lang_Classify_Tip12 = "註冊成功!!"; // 註冊成功
+$Lang_Classify_Tip13 = "目前此帳號需等待管理員驗證!!"; // 目前此帳號需等待管理員驗證
+$Lang_Classify_Tip14 = "修改成功!!"; // 修改成功
+
+/* ---------- 帳號登入 ---------- */
+$Lang_Classify_Context_Account_Member = "帳號"; // 	帳號
+$Lang_Classify_Context_Psw_Member = "密碼"; // 	密碼
+$Lang_Classify_Click_Here_To_Register = "點此註冊"; // 點此註冊
+$Lang_Classify_Forgot_Psw = "忘記密碼"; // 忘記密碼
+$Lang_Classify_Not_Yet_A_Member = "若您尚未加入會員"; // 若您尚未加入會員
+$Lang_Classify_Login_Successful = "登入成功"; // 登入成功
+$Lang_Classify_Context_Pswcheck_Member = "驗證密碼"; // 	分類別
+$Lang_Classify_Context_Login_Member = "登入會員"; // 	登入會員
+
+
+/* =================================================================================================================*/
+/*  最新訊息
+/* =================================================================================================================*/
+$Lang_Title_News = "最新訊息"; // 	網頁標題
+$Lang_Content_Title_News = "最新訊息"; // 	大標題
+
+/* =================================================================================================================*/
+/*  關於我們
+/* =================================================================================================================*/
+$Lang_Title_About = "關於我們"; // 	網頁標題
+$Lang_Content_Title_About = "關於我們"; // 	大標題
+
+/* =================================================================================================================*/
+/*  自訂頁面
+/* =================================================================================================================*/
+$Lang_Title_DfPage = "文章"; // 	網頁標題
+$Lang_Content_Title_DfPage = "文章"; // 	大標題
+
+/* =================================================================================================================*/
+/*  聯絡我們
+/* =================================================================================================================*/
+$Lang_Title_Contact = "聯絡我們"; // 	網頁標題
+$Lang_Content_Title_Contact = "聯絡我們"; // 	大標題
+$Lang_Classify_Context_Mail_Send_Success = "信件已送出"; // 	信件已送出
+$Lang_Classify_Context_Mail_Send_Title = "主題"; // 	主題
+$Lang_Classify_Context_Mail_Send_Class = "分類"; // 	分類
+$Lang_Classify_Context_Mail_Send_Select_Class = "選擇分類"; // 	選擇分類
+$Lang_Classify_Context_Mail_Send_Name = "姓名"; // 	姓名
+$Lang_Classify_Context_Mail_Send_Sex = "性別"; // 	姓別
+$Lang_Classify_Context_Mail_Send_Man = "男"; // 	男
+$Lang_Classify_Context_Mail_Send_Woman = "女"; // 	女
+$Lang_Classify_Context_Mail_Send_Addr = "地址"; // 	地址
+$Lang_Classify_Context_Mail_Send_Phone = "電話"; // 	電話
+$Lang_Classify_Context_Mail_Send_Fax = "傳真"; // 	傳真
+$Lang_Classify_Context_Mail_Send_Message = "您的留言"; // 	您的留言
+$Lang_Classify_Context_Mail_Send_Verify = "驗證碼"; // 	驗證碼
+
+/* =================================================================================================================*/
+/*  文章管理
+/* =================================================================================================================*/
+$Lang_Title_Article = "文章"; // 	網頁標題
+$Lang_Content_Title_Article = "文章"; // 	大標題
+
+/* =================================================================================================================*/
+/*  留言訊息
+/* =================================================================================================================*/
+$Lang_Title_Guestbook = "留言訊息"; // 	網頁標題
+$Lang_Title_PostMessage = "發表留言"; // 	發表留言
+$Lang_Content_Title_Guestbook = "留言訊息"; // 	大標題
+$Lang_Classify_Context_Title_Guestbook = "標題"; // 	分類別
+$Lang_Classify_Context_Type_Guestbook = "類別"; // 	分類別
+$Lang_Classify_Context_Date_Guestbook = "日期"; // 	分類別
+$Lang_Classify_Context_Author_Guestbook = "發表人"; // 分類別
+$Lang_Classify_Context_State_Guestbook = "狀態"; // 分類別
+$Lang_Classify_Context_QA1_Guestbook = "公開詢問"; // 分類別
+$Lang_Classify_Context_QA2_Guestbook = "狀態"; // 分類別
+$Lang_Classify_Context_Content_Guestbook = "內文"; // 分類別
+$Lang_Classify_Context_Note_Guestbook = "備註"; // 分類別
+$Lang_MessagePostDate = "發表時間"; // 	發布時間
+$Lang_ReplyPostDate = "回覆時間"; // 	發布時間
+$Lang_Reply = "回覆"; // 	回覆
+$Lang_No_Reply = "目前尚無回應!!"; // 	目前尚無回應
+$Lang_Post_Message_Guestbook = "留言成功!!"; // 留言成功!!
+$Lang_Post_Message_Guestbook_TimeOut = "留言時間間隔過短!!"; // 留言時間間隔過短!!
+$Lang_Post_Message_Guestbook_Admin_See = "選擇私密留言則只有管理者可以看見!!"; // 留言時間間隔過短!!
+
+/* =================================================================================================================*/
+/*  型錄下載
+/* =================================================================================================================*/
+$Lang_Title_Catalog = "型錄下載"; // 	網頁標題
+$Lang_Content_Title_Catalog = "型錄下載"; // 	大標題
+
+/* =================================================================================================================*/
+/*  活動花絮
+/* =================================================================================================================*/
+$Lang_Title_Activities = "活動花絮"; // 	網頁標題
+$Lang_Content_Title_Activities = "活動花絮"; // 	大標題
+$Lang_Classify_Context_ViewPic_Activities = "圖片"; // 圖片
+$Lang_Classify_Context_Title_Activities = "標題"; // 標題
+$Lang_Classify_Context_Type_Activities = "類別"; // 	類別
+$Lang_Classify_Context_Date_Activities = "發布日期"; // 	發布日期
+$Lang_Classify_Context_PhotoNum_Activities = "相片"; // 	相片
+$Lang_Classify_Context_Location_Activities = "地點："; // 	地點：
+$Lang_Classify_Context_Date_Activities = "時間："; // 	時間：
+$Lang_Classify_Context_PhotoNum_Activities = "張相片"; //張相片
+
+/* =================================================================================================================*/
+/*  友站連結
+/* =================================================================================================================*/
+$Lang_Title_Frilink = "友站連結"; // 	網頁標題
+$Lang_Content_Title_Frilink = "友站連結"; // 	大標題
+
+/* =================================================================================================================*/
+/*  發布資訊
+/* =================================================================================================================*/
+$Lang_Title_Publish = "發布資訊"; // 	網頁標題
+$Lang_Content_Title_Publish = "發布資訊"; // 	大標題
+
+/* =================================================================================================================*/
+/*  求職徵才
+/* =================================================================================================================*/
+$Lang_Title_Careers = "求職徵才"; // 	網頁標題
+$Lang_Content_Title_Careers = "求職徵才"; // 	大標題
+$Lang_Classify_Context_Title_Careers = "標題"; // 	分類別
+$Lang_Classify_Context_Type_Careers = "類別"; // 	分類別
+$Lang_Classify_Context_Date_Careers = "日期"; // 	分類別
+$Lang_ListType_Select_Careers = "-- 選擇類別 --"; // -- 選擇類別 --
+$Lang_ListArea_Select_Careers = "-- 選擇區域 --"; // -- 選擇區域 --
+$Lang_ListAuthor_Select_Careers = "--- 選擇發佈單位 --"; // -- 選擇發佈單位 -
+
+/* =================================================================================================================*/
+/*  活動快訊
+/* =================================================================================================================*/
+$Lang_Title_Actnews = "活動快訊"; // 	網頁標題
+$Lang_Content_Title_Actnews = "活動快訊"; // 	大標題
+
+/* =================================================================================================================*/
+/*  知識學習
+/* =================================================================================================================*/
+$Lang_Title_Knowledge = "知識學習"; // 	網頁標題
+$Lang_Content_Title_Knowledge = "知識學習"; // 	大標題
+
+/* =================================================================================================================*/
+/*  討論專區
+/* =================================================================================================================*/
+$Lang_Title_Forum = "討論專區"; // 	網頁標題
+$Lang_Content_Title_Forum = "討論專區"; // 	大標題
+
+/* =================================================================================================================*/
+/*  會員中心
+/* =================================================================================================================*/
+$Lang_Title_Member = "會員專區"; // 	網頁標題
+$Lang_Content_Title_Member = "會員專區"; // 	大標題
+$Lang_Content_Title_Member_UserDate = "修改個人資料"; // 	大標題
+$Lang_Content_Title_Member_Reg = "會員註冊"; // 	大標題
+$Lang_Content_Title_Account_Edit = "帳號資料填寫"; // 	大標題
+$Lang_Content_Title_Person_Edit = "個人資料填寫"; // 	大標題
+
+$Lang_Classify_Context_Regdate_Member = "註冊日期"; // 	分類別
+$Lang_Classify_Context_Name_Member = "姓名"; // 	分類別
+$Lang_Classify_Context_Mail_Member = "電子郵件"; // 	分類別
+$Lang_Classify_Context_Tel_Member = "電話"; // 	分類別
+$Lang_Classify_Context_Cellphone_Member = "行動"; // 	分類別
+$Lang_Classify_Context_Addr_Member = "地址"; // 	分類別
+$Lang_Classify_Context_Note_Member = "備註"; // 	分類別
+$Lang_Classify_Context_Fax_Member = "傳真"; // 	分類別
+$Lang_Classify_Context_Sex_Member = "性別"; // 	分類別
+$Lang_Classify_Context_Boy_Member = "男"; // 	分類別
+$Lang_Classify_Context_Girl_Member = "女"; // 	分類別
+$Lang_Classify_Context_Nickname_Member = "暱稱"; // 	分類別
+$Lang_Classify_Context_Web_Member = "網頁"; // 	分類別
+$Lang_Classify_Context_Job_Member = "職稱"; // 	分類別
+$Lang_Classify_Context_Serviceunits_Member = "服務單位"; // 	分類別
+$Lang_Classify_Context_Birthday_Member = "生日"; // 	分類別
+
+/* =================================================================================================================*/
+/*  組織成員
+/* =================================================================================================================*/
+$Lang_Title_Org = "組織成員"; // 	網頁標題
+$Lang_Content_Title_Org = "組織成員"; // 	大標題
+
+$Lang_Classify_Context_Title_Org = "標題"; // 	標題
+$Lang_Classify_Context_Type_Org = "類別"; // 	類別
+$Lang_Classify_Context_Date_Org = "日期"; // 	日期
+$Lang_Classify_Context_Name_Org = "姓名："; // 	姓名：
+$Lang_Classify_Context_TitleName_Org = "職稱："; // 	職稱：
+$Lang_Classify_Context_Education_Org = "學歷："; // 	學歷：
+$Lang_Classify_Context_Speciality_Org = "專長："; // 	專長：
+$Lang_Classify_Context_Phone_Org = "電話："; // 	電話：
+$Lang_Classify_Context_Email_Org = "信箱："; // 	信箱：
+$Lang_Classify_Context_Notes1_Org = "備註："; // 	備註：
+$Lang_Classify_Context_Detailed_Org = "詳細資料"; // 	詳細資料
+
+$Lang_Tab_Content_Org = "詳細資料"; // 詳細資料
+$Lang_Tab_Content1_Org = "經驗歷程"; // 經驗歷程
+$Lang_Tab_Content2_Org = "專長領域"; // 專長領域
+$Lang_Tab_Content3_Org = "榮譽事蹟"; // 榮譽事蹟
+$Lang_Tab_Content4_Org = "補充說明"; // 補充說明
+
+/* =================================================================================================================*/
+/*  品牌介紹
+/* =================================================================================================================*/
+$Lang_Title_Sponsor = "品牌介紹"; // 	網頁標題
+$Lang_Content_Title_Sponsor = "品牌介紹"; // 	大標題
+
+/* =================================================================================================================*/
+/*  合作夥伴
+/* =================================================================================================================*/
+$Lang_Title_Partner = "合作夥伴"; // 	網頁標題
+$Lang_Content_Title_Partner = "合作夥伴"; // 	大標題
+
+/* =================================================================================================================*/
+/*  新聞快報
+/* =================================================================================================================*/
+$Lang_Title_Letters = "新聞快報"; // 	網頁標題
+$Lang_Content_Title_Letters = "新聞快報"; // 	大標題
+
+/* =================================================================================================================*/
+/*  圖片展示
+/* =================================================================================================================*/
+$Lang_Title_Imageshow = "圖片展示"; // 	網頁標題
+$Lang_Content_Title_Imageshow = "圖片展示"; // 	大標題
+
+/* =================================================================================================================*/
+/*  常見問答
+/* =================================================================================================================*/
+$Lang_Title_Faq = "常見問答"; // 	網頁標題
+$Lang_Content_Title_Faq = "常見問答"; // 	大標題
+
+/* =================================================================================================================*/
+/*  經銷商專區
+/* =================================================================================================================*/
+$Lang_Title_Dealer = "經銷商專區"; // 	網頁標題
+
+$Lang_Content_Title_Dealer = "經銷商專區"; // 	大標題
+$Lang_Content_Title_Dealer_UserDate = "修改經銷商資料"; // 	大標題
+$Lang_Content_Title_Dealer_Reg = "經銷商註冊"; // 	大標題
+
+$Lang_Classify_Context_Regdate_Dealer = "註冊日期"; // 	分類別
+$Lang_Classify_Context_Name_Dealer = "公司寶號"; // 	分類別
+$Lang_Classify_Context_Account_Dealer = "帳號"; // 	分類別
+$Lang_Classify_Context_Mail_Dealer = "電子郵件"; // 	分類別
+$Lang_Classify_Context_Tel_Dealer = "電話"; // 	分類別
+$Lang_Classify_Context_Cellphone_Dealer = "行動"; // 	分類別
+$Lang_Classify_Context_Addr_Dealer = "地址"; // 	分類別
+$Lang_Classify_Context_Note_Dealer = "備註"; // 	分類別
+$Lang_Classify_Context_Fax_Dealer = "傳真"; // 	分類別
+$Lang_Classify_Context_Psw_Dealer = "密碼"; // 	分類別
+$Lang_Classify_Context_Sex_Dealer = "性別"; // 	分類別
+$Lang_Classify_Context_Boy_Dealer = "男"; // 	分類別
+$Lang_Classify_Context_Girl_Dealer = "女"; // 	分類別
+$Lang_Classify_Context_Nickname_Dealer = "暱稱"; // 	分類別
+$Lang_Classify_Context_Pswcheck_Dealer = "驗證密碼"; // 	分類別
+$Lang_Classify_Context_Web_Dealer = "網頁"; // 	分類別
+$Lang_Classify_Context_Job_Dealer = "聯絡人"; // 	分類別
+$Lang_Classify_Context_Serviceunits_Dealer = "服務單位"; // 	分類別
+$Lang_Classify_Context_Birthday_Dealer = "生日"; // 	分類別
+
+/* =================================================================================================================*/
+/*  捐款名錄
+/* =================================================================================================================*/
+$Lang_Title_Donation = "捐款名錄"; // 	網頁標題
+$Lang_Content_Title_Donation = "捐款名錄"; // 	大標題
+
+/* =================================================================================================================*/
+/*  經營據點
+/* =================================================================================================================*/
+$Lang_Title_Attractions = "經營據點"; // 	網頁標題
+$Lang_Content_Title_Attractions = "經營據點"; // 	大標題
+$Lang_Classify_Context_Title_Attractions = "標題"; // 	分類別
+$Lang_Classify_Context_Type_Attractions = "類別"; // 	分類別
+$Lang_Classify_Context_Date_Attractions = "日期"; // 	分類別
+$Lang_Classify_Context_SeeMap_Attractions = "移動地圖至目前位置"; // 	分類別
+$Lang_Classify_Context_Addr_Attractions = "地址："; // 	分類別
+$Lang_Classify_Context_Phone_Attractions = "電話："; // 	分類別
+$Lang_Classify_Context_Fax_Attractions = "傳真："; // 	分類別
+$Lang_Classify_Context_Mail_Attractions = "信箱："; // 	分類別
+$Lang_Classify_Context_Url_Attractions = "網址："; // 	分類別
+$Lang_Classify_Context_Supplement_Attractions = "補充："; // 	分類別
+$Lang_Classify_Context_Openinghours_Attractions = "營業時間："; // 	分類別
+
+/* =================================================================================================================*/
+/*  相簿展示
+/* =================================================================================================================*/
+$Lang_Title_Album = "相簿展示"; // 	網頁標題
+$Lang_Content_Title_Album = "相簿展示"; // 	大標題
+$Lang_Classify_Context_ViewPic_Album = "圖片"; // 圖片
+$Lang_Classify_Context_Title_Album = "標題"; // 標題
+$Lang_Classify_Context_Type_Album = "類別"; // 	類別
+$Lang_Classify_Context_Date_Album = "發布日期"; // 	發布日期
+$Lang_Classify_Context_PhotoNum_Album = "相片"; // 	相片
+$Lang_Classify_Context_Location_Album = "地點："; // 	地點：
+$Lang_Classify_Context_Date_Album = "時間："; // 	時間：
+$Lang_Classify_Context_PhotoNum_Album = "張相片"; //張相片
+
+/* =================================================================================================================*/
+/*  藝文專欄
+/* =================================================================================================================*/
+$Lang_Title_Artlist = "藝文專欄"; // 	網頁標題
+$Lang_Content_Title_Artlist = "藝文專欄"; // 	大標題
+$Lang_Classify_Context_Detauled_Artlist = "(繼續閱讀...)"; // 	(繼續閱讀...)
+
+/* =================================================================================================================*/
+/*  會議紀錄
+/* =================================================================================================================*/
+$Lang_Title_Meeting = "會議紀錄"; // 	網頁標題
+$Lang_Content_Title_Meeting = "會議紀錄"; // 	大標題
+
+/* =================================================================================================================*/
+/*  模組連結
+/* =================================================================================================================*/
+$Lang_Title_Modlink = "模組連結"; // 	網頁標題
+$Lang_Content_Title_Modlink = "模組連結"; // 	大標題
+
+/* =================================================================================================================*/
+/*  相關連結
+/* =================================================================================================================*/
+$Lang_Title_Otrlink = "相關連結"; // 	網頁標題
+$Lang_Content_Title_Otrlink = "相關連結"; // 	大標題
+
+/* =================================================================================================================*/
+/*  產品資訊
+/* =================================================================================================================*/
+$Lang_Title_Product = "產品資訊"; // 	網頁標題
+$Lang_Content_Title_Product = "產品資訊"; // 	大標題
+$Lang_Classify_Context_Title_Product = "標題"; // 	標題
+$Lang_Classify_Context_Type_Product = "類別"; // 	類別
+$Lang_Classify_Context_Date_Product = "日期"; // 	日期
+$Lang_Classify_Context_Name_Product = "名稱："; // 	名稱：
+$Lang_Classify_Context_Pdseries_Product = "型號："; // 	型號：
+$Lang_Classify_Context_Model_Product = "規格："; // 	規格：
+$Lang_Classify_Context_Model_Product_Select = "規格選擇"; // 	規格：
+$Lang_Classify_Context_Model_Product_Select_Sp = "特殊規格選擇"; // 	規格：
+$Lang_Classify_Context_Price_Product = "價格："; // 	價格：
+$Lang_Classify_Context_Spprice_Product = "特價："; // 	特價：
+$Lang_Classify_Context_Sdescription_Product = "描述："; // 	描述：
+$Lang_Classify_Context_Num_Product = "數量："; // 	數量：
+$Lang_Classify_Context_PlusArea_Product = "加購專區"; // 	加購專區
+$Lang_Classify_Context_Cart_Product = "購物車"; // 	購物車
+$Lang_Classify_Context_Cart_Number = "編號"; // 	編號
+$Lang_Classify_Context_Cart_Note = "備註"; // 	備註
+$Lang_Classify_Context_Cart_Orig = "原價："; // 	原價
+$Lang_Classify_Context_Cart_instock = "庫存："; // 	庫存
+$Lang_Classify_Context_Currency_units = "NT \$"; // 	幣別
+
+$Lang_Classify_Context_Add_Product = "加"; // 	加 ?$ 買
+$Lang_Classify_Context_Buy_Product = "買"; // 	加 ?$ 買
+
+$Lang_Classify_Context_Ratercount_Product = "評分人數："; // 	評分人數：
+$Lang_Classify_Context_NoRatercount_Product = "尚未評分"; // 	尚未評分
+$Lang_Classify_Context_Visit_Product = "瀏覽次數："; // 瀏覽次數：
+
+$Lang_Tab_Content_Product = "商品說明"; // 商品說明
+$Lang_Tab_Content1_Product = "退換貨服務"; // 退換貨服務
+$Lang_Tab_Content2_Product = "其他注意事項"; // 其他注意事項
+$Lang_Tab_FAQ_Product = "問與答"; // 問答紀錄
+$Lang_Classify_Product_Name_Search = "搜尋商品名稱"; // 	搜尋商品名稱
+
+
+/* =================================================================================================================*/
+/*  工程實績
+/* =================================================================================================================*/
+$Lang_Title_Project = "工程實績"; // 	網頁標題
+$Lang_Content_Title_Project = "工程實績"; // 	大標題
+$Lang_Classify_Context_ViewPic_Project = "圖片"; // 圖片
+$Lang_Classify_Context_Title_Project = "標題"; // 標題
+$Lang_Classify_Context_Type_Project = "類別"; // 	類別
+$Lang_Classify_Context_Date_Project = "發布日期"; // 	發布日期
+$Lang_Classify_Context_PhotoNum_Project = "相片"; // 	相片
+$Lang_Classify_Context_Location_Project = "地點："; // 	地點：
+$Lang_Classify_Context_Date_Project = "時間："; // 	時間：
+$Lang_Classify_Context_PhotoNum_Project = "張相片"; //張相片
+
+/* =================================================================================================================*/
+/*  房型展示
+/* =================================================================================================================*/
+$Lang_Title_Room = "房型展示"; // 	網頁標題
+$Lang_Content_Title_Room = "房型展示"; // 	大標題
+$Lang_Classify_Context_Title_Room = "標題"; // 	標題
+$Lang_Classify_Context_Type_Room = "類別"; // 	類別
+$Lang_Classify_Context_Date_Room = "日期"; // 	日期
+$Lang_Classify_Context_Name_Room = "名稱："; // 	名稱：
+$Lang_Classify_Context_Pdseries_Room = "貨號："; // 	貨號：
+$Lang_Classify_Context_Model_Room = "規格："; // 	規格：
+$Lang_Classify_Context_Price_Room = "價格："; // 	價格：
+$Lang_Classify_Context_Spprice_Room = "特價："; // 	特價：
+$Lang_Classify_Context_Sdescription_Room = "描述："; // 	描述：
+$Lang_Classify_Context_Num_Room = "數量："; // 	數量：
+$Lang_Classify_Context_PlusArea_Room = "加購專區"; // 	加購專區
+
+$Lang_Classify_Context_Add_Room = "加"; // 	加 ?$ 買
+$Lang_Classify_Context_Buy_Room = "買"; // 	加 ?$ 買
+
+$Lang_Classify_Context_Ratercount_Room = "評分人數："; // 	評分人數：
+$Lang_Classify_Context_NoRatercount_Room = "尚未評分"; // 	尚未評分
+$Lang_Classify_Context_Visit_Room = "瀏覽次數："; // 瀏覽次數：
+
+$Lang_Tab_Content_Room = "房型說明"; // 商品說明
+$Lang_Tab_Content1_Room = "退換貨服務"; // 退換貨服務
+$Lang_Tab_Content2_Room = "其他注意事項"; // 其他注意事項
+$Lang_Tab_FAQ_Room = "問答紀錄"; // 問答紀錄
+
+/* =================================================================================================================*/
+/*  影音共享
+/* =================================================================================================================*/
+$Lang_Title_Video = "影音共享"; // 	網頁標題
+$Lang_Content_Title_Video = "影音共享"; // 	大標題
+
+/* =================================================================================================================*/
+/*  歷史沿革
+/* =================================================================================================================*/
+$Lang_Title_Timeline = "歷史沿革"; // 	網頁標題
+$Lang_Content_Title_Timeline = "歷史沿革"; // 	大標題
+
+/* =================================================================================================================*/
+/*  網站資訊
+/* =================================================================================================================*/
+$Lang_Title_WebSite = "網站資訊"; // 	網頁標題
+$Lang_Content_Title_WebSite = "網站資訊"; // 	大標題
+
+/* =================================================================================================================*/
+/*  Blog
+/* =================================================================================================================*/
+$Lang_Title_Blog = "Blog"; // 	網頁標題
+$Lang_Content_Title_Blog = "Blog"; // 	大標題
+$Lang_Classify_Context_Title_Blog = "標題"; // 	標題
+$Lang_Classify_Context_Type_Blog = "類別"; // 	類別
+$Lang_Classify_Context_Date_Blog = "日期"; // 	日期
+$Lang_Classify_Context_ReadMore_Blog = "(繼續閱讀...)"; // 	(繼續閱讀...)
+$Lang_Classify_Context_ReadMoreTip_Blog = "閱讀此文章需要提示"; // 閱讀此文章需要提示
+$Lang_Classify_Context_PswTip_Blog = "密碼提示："; // 密碼提示：
+$Lang_Classify_Context_Psw_Blog = "密碼："; // 密碼：
+$Lang_Classify_Context_Post_Blog = "發表於"; // 發表於
+$Lang_Classify_Context_ViewCount_Blog = "人氣"; // 人氣
+$Lang_Classify_Context_ReplyCount_Blog = "回應"; // 回應
+
+/* =================================================================================================================*/
+/*  公告資訊
+/* =================================================================================================================*/
+$Lang_Title_Bullent = "公告資訊"; // 	網頁標題
+$Lang_Content_Title_Bullent = "公告資訊"; // 	大標題
+$Lang_Classify_Context_Link_Bullent = "連結"; // 	標題
+$Lang_Classify_Context_More_Bullent = "更多公告請參閱此處"; // 	標題
+$Lang_Classify_Context_No_Bullent = "目前暫無公告"; // 	標題
+$Lang_Classify_Context_Next_Bullent = "下一則"; // 	標題
+$Lang_Classify_Context_Prev_Bullent = "上一則"; // 	標題
+$Lang_Classify_Context_Skip_Bullent = "略過"; // 	標題
+$Lang_Classify_Context_End_Bullent = "結束"; // 	標題
+
+/* =================================================================================================================*/
+/*  隱私權
+/* =================================================================================================================*/
+$Lang_Title_Privacy = "隱私權政策"; // 	網頁標題
+
+/* =================================================================================================================*/
+/*  購物須知
+/* =================================================================================================================*/
+$Lang_Title_ShoppingNotes = "購物須知"; // 	網頁標題
+
+/* =================================================================================================================*/
+/*  頁尾資訊
+/* =================================================================================================================*/
+$Lang_Footer_Menu_Member = "會員"; // 	會員
+$Lang_Footer_Menu_Catalog = "選單"; // 	產品目錄
+$Lang_Footer_Menu_ShoppingNotes = "購物須知"; // 	購物須知
+$Lang_Footer_Menu_Cart = "購物車"; // 	購物車
+$Lang_Footer_Menu = "產品分類"; // 	產品目錄
+
+/* =================================================================================================================*/
+/*  社群聊天
+/* =================================================================================================================*/
+$Lang_Social_Title = "需要幫助嗎?"; // 	Need Help? Chat with us
+$Lang_Social_Tagline = "Click one of our representatives below"; // 	Click one of our representatives below
+?>

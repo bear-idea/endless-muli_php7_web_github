@@ -1,0 +1,8 @@
+.QapTcha{padding:0;margin-top:0;position:relative}
+.QapTcha .clr{clear:both}
+.QapTcha .bgSlider{width:202px;height:22px;background:transparent url(../images/sprites.png) no-repeat 0 -22px;float:left}
+.QapTcha .Slider{width:48px;height:22px;background:transparent url(../images/sprites.png) no-repeat -32px 0;cursor:e-resize}
+.QapTcha .Icons{float:left;width:16px;height:16px;background:transparent url(../images/sprites.png) no-repeat 0 0;margin-top:3px;margin-left:10px}
+.QapTcha .TxtStatus{width:302px;margin-top:7px;float:left;padding-left:8px}
+.QapTcha .dropSuccess{color:#568E2F}
+.QapTcha .dropError{color:#bb2828}

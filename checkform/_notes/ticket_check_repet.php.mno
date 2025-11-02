@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordUsernameCheck" value="name:v_id;datatype:int,name:d_id;datatype:int,name:table_num;datatype:int,name:chair_num;datatype:int,name:purchaser;datatype:string,name:paytype;datatype:string,name:postdate;datatype:timestamp,name:paystate;datatype:int,name:indicate;datatype:int,name:notes1;datatype:string,name:notes2;datatype:string,name:sortid;datatype:int,name:lang;datatype:string" />
+</info>

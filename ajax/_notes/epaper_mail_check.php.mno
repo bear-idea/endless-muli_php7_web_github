@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_EPaperMailCheck" value="name:id;datatype:int,name:mail;datatype:string,name:postdate;datatype:timestamp,name:indicate;datatype:int,name:notes1;datatype:string,name:sortid;datatype:int,name:lang;datatype:string" />
+</info>

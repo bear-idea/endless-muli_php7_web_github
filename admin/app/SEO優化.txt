@@ -1,0 +1,90 @@
+CREATE TABLE `seo_meta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '編號',
+  `ogtitle` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG標題',
+  `ogtype` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG類型',
+  `ogurl` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG網址',
+  `ogimage` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG圖片',
+  `ogsite_name` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG網站名稱',
+  `ogdescription` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG描述',
+  `sdescription` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '簡要描述',
+  `skeyword` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '關鍵字',
+  `skeywordindicate` int(2) NOT NULL DEFAULT '1' COMMENT '關鍵字顯示',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='SEO Metadata';
+
+
+ALTER TABLE `demo_news`
+ADD COLUMN `seo_meta_id` int(11) DEFAULT NULL COMMENT 'SEO Meta ID',
+DROP COLUMN `ogtitle`,
+DROP COLUMN `ogtype`,
+DROP COLUMN `ogurl`,
+DROP COLUMN `ogimage`,
+DROP COLUMN `ogsite_name`,
+DROP COLUMN `ogdescription`,
+DROP COLUMN `sdescription`,
+DROP COLUMN `skeyword`,
+DROP COLUMN `skeywordindicate`;
+
+CREATE TABLE `demo_news` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '編號',
+  `title` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '標題',
+  `author` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '作者',
+  `type` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '類別',
+  `content` longtext COLLATE utf8mb4_unicode_ci COMMENT '內容',
+  `postdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '發布日期',
+  `indicate` int(2) NOT NULL DEFAULT '1' COMMENT '是否顯示',
+  `menutype` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'news' COMMENT '選單類型',
+  `pushtop` int(2) NOT NULL DEFAULT '0',
+  `notes1` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '備註1',
+  `notes2` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '備註2',
+  `sortid` int(11) NOT NULL DEFAULT '50' COMMENT '排序',
+  `lang` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'zh-tw' COMMENT '語系',
+  `userid` int(11) NOT NULL DEFAULT '1',
+  `seo_meta_id` int(11) DEFAULT NULL COMMENT 'SEO Meta ID',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='最新訊息';
+
+
+-- 1. 创建 SEO Meta 表
+CREATE TABLE `seo_meta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '編號',
+  `ogtitle` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG標題',
+  `ogtype` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG類型',
+  `ogurl` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG網址',
+  `ogimage` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG圖片',
+  `ogsite_name` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG網站名稱',
+  `ogdescription` varchar(300) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'OG描述',
+  `sdescription` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '簡要描述',
+  `skeyword` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '關鍵字',
+  `skeywordindicate` int(2) NOT NULL DEFAULT '1' COMMENT '關鍵字顯示',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='SEO Metadata';
+
+-- 2. 更新 demo_news 表结构，添加 slug 和 seo_meta_id 字段
+ALTER TABLE `demo_news`
+ADD COLUMN `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL UNIQUE COMMENT 'Slug',
+ADD COLUMN `seo_meta_id` int(11) DEFAULT NULL COMMENT 'SEO Meta ID',
+DROP COLUMN `ogtitle`,
+DROP COLUMN `ogtype`,
+DROP COLUMN `ogurl`,
+DROP COLUMN `ogimage`,
+DROP COLUMN `ogsite_name`,
+DROP COLUMN `ogdescription`,
+DROP COLUMN `sdescription`,
+DROP COLUMN `skeyword`,
+DROP COLUMN `skeywordindicate`;
+
+-- 3. 将现有的 SEO 数据插入到 seo_meta 表
+INSERT INTO seo_meta (ogtitle, ogtype, ogurl, ogimage, ogsite_name, ogdescription, sdescription, skeyword, skeywordindicate)
+SELECT ogtitle, ogtype, ogurl, ogimage, ogsite_name, ogdescription, sdescription, skeyword, skeywordindicate
+FROM demo_news;
+
+-- 4. 将生成的 SEO Meta ID 更新到 demo_news 表中
+UPDATE demo_news dn
+JOIN seo_meta sm ON dn.ogtitle = sm.ogtitle AND dn.ogtype = sm.ogtype AND dn.ogurl = sm.ogurl AND dn.ogimage = sm.ogimage AND dn.ogsite_name = sm.ogsite_name AND dn.ogdescription = sm.ogdescription AND dn.sdescription = sm.sdescription AND dn.skeyword = sm.skeyword AND dn.skeywordindicate = sm.skeywordindicate
+SET dn.seo_meta_id = sm.id;
+
+
+ALTER TABLE `demo_news` ADD `slug` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL AFTER `title`, ADD `meta_id` INT(11) NULL AFTER `slug`;
+
+

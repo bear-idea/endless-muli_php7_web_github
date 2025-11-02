@@ -1,0 +1,9 @@
+.zogo-form-checkbox{height:16px; line-height:18px; padding-left:20px; background:url(../images/checkbox.png) no-repeat left 0px; cursor:pointer; display:-moz-inline-stack;  display:inline-block;  zoom:1;  *display:inline}
+
+.zogo-form-checkbox-hover{background-position:left -16px}
+.zogo-form-checkbox-checked{background-position:left -32px !important}
+
+.zogo-form-radio{height:16px; line-height:18px; padding-left:20px; background:url(../images/radio.png) no-repeat left 0px; cursor:pointer; display:-moz-inline-stack;  display:inline-block;  zoom:1;  *display:inline}
+
+.zogo-form-radio-hover{background-position:left -16px}
+.zogo-form-radio-checked{background-position:left -32px !important}

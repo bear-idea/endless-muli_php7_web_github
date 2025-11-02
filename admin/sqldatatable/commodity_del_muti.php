@@ -1,0 +1,75 @@
+<?php require_once('../../Connections/DB_Conn.php'); ?>
+<?php require_once('upload_get_admin.php'); ?>
+<?php require_once("../../inc/inc_function.php"); ?>
+<?php //include('mysqli_to_json.class.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  Global $DB_Conn;
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = mysqli_real_escape_string($DB_Conn, $theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+if ((isset($_POST['id'])) && ($_POST['id'] != "")) {
+  // 取得商品資料
+  foreach($_POST['id'] as $i => $val){
+	  $colname_RecordCommodityMuliGet = "-1";
+	  if (isset($val)) {
+		$colname_RecordCommodityMuliGet = $val;
+	  }
+	  //mysqli_select_db($database_DB_Conn, $DB_Conn);
+	  $query_RecordCommodityMuliGet = sprintf("SELECT * FROM invoicing_commodity WHERE id = %s", GetSQLValueString($colname_RecordCommodityMuliGet, "int"));
+	  $RecordCommodityMuliGet = mysqli_query($DB_Conn, $query_RecordCommodityMuliGet) or die(mysqli_error($DB_Conn));
+	  $row_RecordCommodityMuliGet = mysqli_fetch_assoc($RecordCommodityMuliGet);
+	  $totalRows_RecordCommodityMuliGet = mysqli_num_rows($RecordCommodityMuliGet);
+	  do 
+	  {
+		  /* 先取得資料庫是否有圖 */
+		  $colname_RecordCommodityGet = "-1";
+		  if (isset($row_RecordCommodityMuliGet['pic'])) {
+			$colname_RecordCommodityGet = $row_RecordCommodityMuliGet['pic'];
+		  }
+		  //mysqli_select_db($database_DB_Conn, $DB_Conn);
+		  $query_RecordCommodityGet = sprintf("SELECT id FROM invoicing_commodity WHERE pic = %s", GetSQLValueString($colname_RecordCommodityGet, "text"));
+		  $RecordCommodityGet = mysqli_query($DB_Conn, $query_RecordCommodityGet) or die(mysqli_error($DB_Conn));
+		  $row_RecordCommodityGet = mysqli_fetch_assoc($RecordCommodityGet);
+		  $totalRows_RecordCommodityGet = mysqli_num_rows($RecordCommodityGet);
+		  
+		  if($totalRows_RecordCommodityGet == 1 ){ /* 如果資料庫只有一筆 就刪除 若此圖有多張 */
+			  @unlink('../' . $SiteImgFilePathAdmin . $wshop . '/image/commodity/' . $row_RecordCommodityMuliGet['pic']);
+			  @unlink('../' . $SiteImgFilePathAdmin . $wshop . '/image/commodity/thumb/small_' . GetFileThumbExtend($row_RecordCommodityMuliGet['pic']));
+		  }
+			  
+	  } while ($row_RecordCommodityMuliGet = mysqli_fetch_assoc($RecordCommodityMuliGet));
+  }
+  
+  $deleteSQL = sprintf("DELETE FROM invoicing_commodity WHERE id in (%s)", implode(",", $_POST['id']));
+  //mysqli_select_db($database_DB_Conn, $DB_Conn);
+  $Result1 = mysqli_query($DB_Conn, $deleteSQL) or die(mysqli_error($DB_Conn));
+}
+?>

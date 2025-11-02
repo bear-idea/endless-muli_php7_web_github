@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordAccount" value="name:id;datatype:int,name:account;datatype:string,name:psw;datatype:string,name:name;datatype:string,name:webname;datatype:string,name:webdesc;datatype:string,name:nickname;datatype:string,name:pic;datatype:string,name:email;datatype:string,name:truename;datatype:string,name:sex;datatype:string,name:birthday;datatype:date,name:phone;datatype:string,name:addr;datatype:string,name:level;datatype:string,name:check;datatype:string,name:notes1;datatype:string" />
+</info>

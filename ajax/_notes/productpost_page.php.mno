@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordProductPost" value="name:id;datatype:int,name:pid;datatype:int,name:author;datatype:string,name:sdescription;datatype:string,name:pic;datatype:string,name:content;datatype:blob,name:postdate;datatype:timestamp,name:indicate;datatype:int,name:notes1;datatype:string,name:notes2;datatype:string,name:sortid;datatype:int,name:lang;datatype:string" />
+</info>

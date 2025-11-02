@@ -1,0 +1,280 @@
+/* 基本 */
+.base {width:99%}
+.base .tl {background:url(base/pf_01.png) no-repeat; width:20px; height:20px;}
+.base .t  {background:url(base/pf_03.png)  repeat-x;  height:20px;}
+.base .tr {background:url(base/pf_05.png) no-repeat; width:20px; height:20px;}
+.base .l  {background:url(base/pf_06.png)  repeat-y;  width:20px;}
+.base .r  {background:url(base/pf_10.png)  repeat-y;  width:20px;}
+.base .bl {background:url(base/pf_14.png) no-repeat; width:20px; height:20px;}
+.base .b  {background:url(base/pf_16.png)  repeat-x;  height:20px;}
+.base .br {background:url(base/pf_18.png) no-repeat; width:20px; height:20px;}
+.base .m  {background:url(base/pf_08.png) repeat; padding:0px;}
+
+/* 圓角 */
+.corner {width:99%}
+.corner .tl {background:url(corner/pf_01.png) no-repeat; width:20px; height:20px;}
+.corner .t  {background:url(corner/pf_03.png)  repeat-x;  height:20px;}
+.corner .tr {background:url(corner/pf_05.png) no-repeat; width:20px; height:20px;}
+.corner .l  {background:url(corner/pf_06.png)  repeat-y;  width:20px;}
+.corner .r  {background:url(corner/pf_10.png)  repeat-y;  width:20px;}
+.corner .bl {background:url(corner/pf_14.png) no-repeat; width:20px; height:20px;}
+.corner .b  {background:url(corner/pf_16.png)  repeat-x;  height:20px;}
+.corner .br {background:url(corner/pf_18.png) no-repeat; width:20px; height:20px;}
+.corner .m  {background:url(corner/pf_08.png) repeat; padding:0px;}
+
+/* 玻璃圓角 */
+.glass01 {width:99%}
+.glass01 .tl {background:url(glass01/a01.png) no-repeat; width:14px; height:14px;}
+.glass01 .t  {background:url(glass01/a02.png)  repeat-x;  height:14px;}
+.glass01 .tr {background:url(glass01/a03.png) no-repeat; width:14px; height:14px;}
+.glass01 .l  {background:url(glass01/a04.png)  repeat-y;  width:14px;}
+.glass01 .r  {background:url(glass01/a06.png)  repeat-y;  width:14px;}
+.glass01 .bl {background:url(glass01/a07.png) no-repeat; width:14px; height:14px;}
+.glass01 .b  {background:url(glass01/a08.png)  repeat-x;  height:14px;}
+.glass01 .br {background:url(glass01/a09.png) no-repeat; width:14px; height:14px;}
+.glass01 .m  {background:url(glass01/a05.jpg) repeat;}
+
+/* 玻璃方角 */
+.glass02 {width:99%}
+.glass02 .tl {background:url(glass02/b01.png) no-repeat; width:14px; height:14px;}
+.glass02 .t  {background:url(glass02/b02.png)  repeat-x;  height:14px;}
+.glass02 .tr {background:url(glass02/b03.png) no-repeat; width:14px; height:14px;}
+.glass02 .l  {background:url(glass02/b04.png)  repeat-y;  width:14px;}
+.glass02 .r  {background:url(glass02/b06.png)  repeat-y;  width:14px;}
+.glass02 .bl {background:url(glass02/b07.png) no-repeat; width:14px; height:14px;}
+.glass02 .b  {background:url(glass02/b08.png)  repeat-x;  height:14px;}
+.glass02 .br {background:url(glass02/b09.png) no-repeat; width:14px; height:14px;}
+.glass02 .m  {background:url(glass02/b05.png) repeat; padding:0px;}
+
+/* 切角 */
+.pick {width:99%}
+.pick .tl {background:url(pick/pf_01.png) no-repeat; width:28px; height:28px;}
+.pick .t  {background:url(pick/pf_03.png)  repeat-x;  height:28px;}
+.pick .tr {background:url(pick/pf_05.png) no-repeat; width:28px; height:28px;}
+.pick .l  {background:url(pick/pf_06.png)  repeat-y;  width:28px;}
+.pick .r  {background:url(pick/pf_10.png)  repeat-y;  width:28px;}
+.pick .bl {background:url(pick/pf_14.png) no-repeat; width:28px; height:28px;}
+.pick .b  {background:url(pick/pf_15.png)  repeat-x;  height:28px;}
+.pick .br {background:url(pick/pf_16.png) no-repeat; width:28px; height:28px;}
+.pick .m  {background:url(pick/pf_08.png) repeat; }
+
+/* 郵票 */
+.stamp {width:99%}
+.stamp .tl {background:url(stamp/01.gif) no-repeat; width:21px; height:21px;}
+.stamp .t  {background:url(stamp/02.gif)  repeat-x;  height:21px;}
+.stamp .tr {background:url(stamp/03.gif) no-repeat; width:21px; height:21px;}
+.stamp .l  {background:url(stamp/04.gif)  repeat-y;  width:21px;}
+.stamp .r  {background:url(stamp/06.gif)  repeat-y;  width:21px;}
+.stamp .b  {background:url(stamp/08.gif)  repeat-x;  height:21px;}
+.stamp .bl {background:url(stamp/07.gif) no-repeat; width:21px; height:21px;}
+.stamp .br {background:url(stamp/09.gif) no-repeat; width:21px; height:21px;}
+.stamp .m  {padding:0px; background-color:#FFF;}
+
+/* 相紙A */
+.photographic{width:99%}
+.photographic .tl{background:url(photographic/01.png) no-repeat;width:7px;height:7px}
+.photographic .t{background:url(photographic/02.png) repeat-x;height:7px}
+.photographic .tr{background:url(photographic/03.png) no-repeat;width:6px;height:7px}
+.photographic .l{background:url(photographic/04.png) repeat-y;width:7px}
+.photographic .r{background:url(photographic/06.png) repeat-y;width:7px}
+.photographic .b{height:7px;background-image:url(photographic/08.png);background-repeat:repeat-x;width:auto}
+.photographic .bl{background:url(photographic/07.png) no-repeat;width:7px;height:13px}
+.photographic .bll{width:43px;height:13px;background-image:url(photographic/07-l.png);background-repeat:no-repeat}
+.photographic .br{background:url(photographic/09.png) no-repeat;width:6px;height:13px}
+.photographic .brr{width:43px;height:13px;background-image:url(photographic/08-r.png);background-repeat:no-repeat;background-position:right}
+.photographic .m{padding:3px}
+
+/* 相紙B */
+.photographic01{width:99%}
+.photographic01 .tl{background:url(photographic01/pf_01.png) no-repeat;width:20px;height:20px}
+.photographic01 .t{background:url(photographic01/pf_02.png) repeat-x;height:20px}
+.photographic01 .tr{background:url(photographic01/pf_03.png) no-repeat;width:20px;height:20px}
+.photographic01 .l{background:url(photographic01/pf_04.png) repeat-y;width:20px}
+.photographic01 .r{background:url(photographic01/pf_06.png) repeat-y;width:20px}
+.photographic01 .b{height:20px;background-image:url(photographic01/pf_08.png);background-repeat:repeat-x;width:auto}
+.photographic01 .bl{background:url(photographic01/pf_07.png) no-repeat;width:20px;height:20px}
+.photographic01 .bll{width:50px;height:20px;background-image:url(photographic01/pf_07-l.png);background-repeat:no-repeat}
+.photographic01 .br{background:url(photographic01/pf_09.png) no-repeat;width:20px;height:20px}
+.photographic01 .brr{width:50px;height:20px;background-image:url(photographic01/pf_08-r.png);background-repeat:no-repeat;background-position:right}
+.photographic01 .m{padding:3px}
+
+/* 相紙C */
+.photographic02{width:99%}
+.photographic02 .tl {background:url(photographic02/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic02 .t  {background:url(photographic02/pf_03.png)  repeat-x;  height:20px;}
+.photographic02 .tr {background:url(photographic02/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic02 .l  {background:url(photographic02/pf_06.png)  repeat-y;  width:20px;}
+.photographic02 .r  {background:url(photographic02/pf_10.png)  repeat-y;  width:20px;}
+.photographic02 .bl {background:url(photographic02/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic02 .b  {background:url(photographic02/pf_16.png)  repeat-x;  height:20px;}
+.photographic02 .br {background:url(photographic02/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic02 .m  {background:url(photographic02/pf_08.png) padding:0px;}
+
+/* 相紙D */
+.photographic03{width:99%}
+.photographic03 .tl {background:url(photographic03/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic03 .t  {background:url(photographic03/pf_03.png)  repeat-x;  height:20px;}
+.photographic03 .tr {background:url(photographic03/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic03 .l  {background:url(photographic03/pf_06.png)  repeat-y;  width:20px;}
+.photographic03 .r  {background:url(photographic03/pf_10.png)  repeat-y;  width:20px;}
+.photographic03 .bl {background:url(photographic03/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic03 .b  {background:url(photographic03/pf_16.png)  repeat-x;  height:20px;}
+.photographic03 .br {background:url(photographic03/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic03 .m  {background:url(photographic03/pf_08.png) padding:0px;}
+
+/* 相紙E */
+.photographic04{width:99%}
+.photographic04 .tl {background:url(photographic04/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic04 .t  {background:url(photographic04/pf_03.png)  repeat-x;  height:20px;}
+.photographic04 .tr {background:url(photographic04/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic04 .l  {background:url(photographic04/pf_06.png)  repeat-y;  width:20px;}
+.photographic04 .r  {background:url(photographic04/pf_10.png)  repeat-y;  width:20px;}
+.photographic04 .bl {background:url(photographic04/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic04 .b  {background:url(photographic04/pf_16.png)  repeat-x;  height:20px;}
+.photographic04 .br {background:url(photographic04/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic04 .m  {background:url(photographic04/pf_08.png) padding:0px;}
+
+/* 相紙F */
+.photographic05{width:99%}
+.photographic05 .tl {background:url(photographic05/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic05 .t  {background:url(photographic05/pf_03.png)  repeat-x;  height:20px;}
+.photographic05 .tr {background:url(photographic05/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic05 .l  {background:url(photographic05/pf_06.png)  repeat-y;  width:20px;}
+.photographic05 .r  {background:url(photographic05/pf_10.png)  repeat-y;  width:20px;}
+.photographic05 .bl {background:url(photographic05/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic05 .b  {background:url(photographic05/pf_16.png)  repeat-x;  height:20px;}
+.photographic05 .br {background:url(photographic05/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic05 .m  {background:url(photographic05/pf_08.png) padding:0px;}
+
+/* 相紙G */
+.photographic06{width:99%}
+.photographic06 .tl {background:url(photographic06/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic06 .t  {background:url(photographic06/pf_03.png)  repeat-x;  height:20px;}
+.photographic06 .tr {background:url(photographic06/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic06 .l  {background:url(photographic06/pf_06.png)  repeat-y;  width:20px;}
+.photographic06 .r  {background:url(photographic06/pf_10.png)  repeat-y;  width:20px;}
+.photographic06 .bl {background:url(photographic06/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic06 .b  {background:url(photographic06/pf_16.png)  repeat-x;  height:20px;}
+.photographic06 .br {background:url(photographic06/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic06 .m  {background:url(photographic06/pf_08.png) repeat;}
+
+/* 相紙E */
+.photographic07{width:99%}
+.photographic07 .tl {background:url(photographic07/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic07 .t  {background:url(photographic07/pf_03.png)  repeat-x;  height:20px;}
+.photographic07 .tr {background:url(photographic07/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic07 .l  {background:url(photographic07/pf_06.png)  repeat-y;  width:20px;}
+.photographic07 .r  {background:url(photographic07/pf_10.png)  repeat-y;  width:20px;}
+.photographic07 .bl {background:url(photographic07/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic07 .b  {background:url(photographic07/pf_16.png)  repeat-x;  height:20px;}
+.photographic07 .br {background:url(photographic07/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic07 .m  {background:url(photographic07/pf_08.png) repeat;}
+
+/* 相紙E */
+.photographic08{width:99%}
+.photographic08 .tl {background:url(photographic08/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic08 .t  {background:url(photographic08/pf_03.png)  repeat-x;  height:20px;}
+.photographic08 .tr {background:url(photographic08/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic08 .l  {background:url(photographic08/pf_06.png)  repeat-y;  width:20px;}
+.photographic08 .r  {background:url(photographic08/pf_10.png)  repeat-y;  width:20px;}
+.photographic08 .bl {background:url(photographic08/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic08 .b  {background:url(photographic08/pf_16.png)  repeat-x;  height:20px;}
+.photographic08 .br {background:url(photographic08/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic08 .m  {background:url(photographic08/pf_08.png) repeat;}
+
+/* 相紙E */
+.photographic09{width:99%}
+.photographic09 .tl {background:url(photographic09/pf_01.png) no-repeat; width:20px; height:20px;}
+.photographic09 .t  {background:url(photographic09/pf_03.png)  repeat-x;  height:20px;}
+.photographic09 .tr {background:url(photographic09/pf_05.png) no-repeat; width:20px; height:20px;}
+.photographic09 .l  {background:url(photographic09/pf_06.png)  repeat-y;  width:20px;}
+.photographic09 .r  {background:url(photographic09/pf_10.png)  repeat-y;  width:20px;}
+.photographic09 .bl {background:url(photographic09/pf_14.png) no-repeat; width:20px; height:20px;}
+.photographic09 .b  {background:url(photographic09/pf_16.png)  repeat-x;  height:20px;}
+.photographic09 .br {background:url(photographic09/pf_18.png) no-repeat; width:20px; height:20px;}
+.photographic09 .m  {background:url(photographic09/pf_08.png) repeat;}
+
+.baseline01{width:99%}
+.baseline01 .tl {width:5px; height:5px;}
+.baseline01 .t  {height:5px;}
+.baseline01 .tr {width:5px; height:5px;}
+.baseline01 .l  {width:5px;}
+.baseline01 .r  {width:5px;}
+.baseline01 .bl {width:5px; height:5px;}
+.baseline01 .b  {height:5px;}
+.baseline01 .br {width:5px; height:5px;}
+.baseline01 .m  {padding:5px;cursor: default;background-color:#FFF;-webkit-box-shadow:0 5px 10px #666; -moz-box-shadow:0 5px 10px #666;box-shadow:0 5px 10px #666; -moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px; border-radius:5px; }
+
+.baseline02{width:99%}
+.baseline02 .tl {width:5px; height:5px;}
+.baseline02 .t  {height:5px;}
+.baseline02 .tr {width:5px; height:5px;}
+.baseline02 .l  {width:5px;}
+.baseline02 .r  {width:5px;}
+.baseline02 .bl {width:5px; height:5px;}
+.baseline02 .b  {height:5px;}
+.baseline02 .br {width:5px; height:5px;}
+.baseline02 .m  {padding: 5px;-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);-moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);box-shadow: 0px 0px 5px rgba(0,0,0,.8);background-color:#fff ;}
+
+.baseline03{width:99%}
+.baseline03 .tl {width:5px; height:5px;}
+.baseline03 .t  {height:5px;}
+.baseline03 .tr {width:5px; height:5px;}
+.baseline03 .l  {width:5px;}
+.baseline03 .r  {width:5px;}
+.baseline03 .bl {width:5px; height:5px;}
+.baseline03 .b  {height:5px;}
+.baseline03 .br {width:5px; height:5px;}
+.baseline03 .m  {padding:5px;background: #f3f3f3;border: 1px solid #fff;border-radius: 5px;box-shadow: 0 1px 3px rgba(0,0,0,0.5);-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5); -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);}
+
+.baseline04{width:99%}
+.baseline04 .tl {width:5px; height:5px;}
+.baseline04 .t  {height:5px;}
+.baseline04 .tr {width:5px; height:5px;}
+.baseline04 .l  {width:5px;}
+.baseline04 .r  {width:5px;}
+.baseline04 .bl {width:5px; height:5px;}
+.baseline04 .b  {height:5px;}
+.baseline04 .br {width:5px; height:5px;}
+.baseline04 .m  {padding:5px;border:1px solid #c2c0b8;background-color:#fff; -webkit-box-shadow:0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8; -moz-box-shadow:0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;box-shadow:0 0 60px 10px rgba(0, 0, 0, .1) inset, 0 5px 0 -4px #fff, 0 5px 0 -3px #c2c0b8, 0 11px 0 -8px #fff, 0 11px 0 -7px #c2c0b8, 0 17px 0 -12px #fff, 0 17px 0 -11px #c2c0b8;}
+
+.baseline05{width:99%}
+.baseline05 .tl {width:5px; height:5px;}
+.baseline05 .t  {height:5px;}
+.baseline05 .tr {width:5px; height:5px;}
+.baseline05 .l  {width:5px;}
+.baseline05 .r  {width:5px;}
+.baseline05 .bl {width:5px; height:5px;}
+.baseline05 .b  {height:5px;}
+.baseline05 .br {width:5px; height:5px;}
+.baseline05 .m  {background: #fff;padding:5px;border-radius: 2px 2px 2px 2px; -webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777;box-shadow: 0 10px 6px -6px #777;}
+
+/*************************************
+ *  內框樣式
+**************************************/
+/* 仿玻璃 */
+div .photoFram_Block_glossy{background-image: url(inner_board_style/glossy-gradient.png);height: 84px;width: 172px;position: absolute;background-repeat: no-repeat;z-index: 1;left: 0px;top: 0px;overflow:hidden;}
+
+/* 花紋A */
+div .photoFram_Block_floral-corner{background-image:url(inner_board_style/floral-corner.png);width:122px;height:72px;position:absolute;background-repeat:no-repeat;z-index:1;left:-20px;top:-20px}
+
+/* 花紋B */
+div .photoFram_Block_heraldry{background-image:url(inner_board_style/heraldry.png);width:70px;height:114px;position:absolute;background-repeat:no-repeat;z-index:1;left:-40px;top:-40px}
+
+/* 迴紋針 */
+div .photoFram_Block_paper-clip{background-image:url(inner_board_style/paper-clip.png);width:30px;height:61px;position:absolute;background-repeat:no-repeat;z-index:1;left:-20px;top:-20px}
+
+/* 圖釘 */
+div .photoFram_Block_pin{background-image:url(inner_board_style/pin.png);width:28px;height:21px;position:absolute;background-repeat:no-repeat;z-index:1;left:2px;top:-25px}
+
+/* 膠帶 */
+div .photoFram_Block_tape{background-image:url(inner_board_style/tape.png);width:75px;height:63px;position:absolute;background-repeat:no-repeat;z-index:1;top:-20px;left:-25px}
+
+/* 花和蝴蝶 */
+div .photoFram_Block_flower{background-image:url(inner_board_style/flower.png);width:80px;height:81px;position:absolute;background-repeat:no-repeat;z-index:1;top:-35px;left:-35px}
+
+/* 葉子 */
+div .photoFram_Block_leaf{background-image:url(inner_board_style/leaf.png);width:100px;height:93px;position:absolute;background-repeat:no-repeat;z-index:1;top:-20px;left:-20px}
+
+/* 夾子 */
+div .photoFram_Block_clip{background-image:url(inner_board_style/clip.png);width:30px;height:38px;position:absolute;background-repeat:no-repeat;z-index:1;top:-35px;left:-5px}

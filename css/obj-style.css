@@ -1,0 +1,56 @@
+﻿@charset "utf-8"; 
+
+#News{}
+
+table.TB_General_style00{}
+table.TB_General_style00 tr{}
+table.TB_General_style00 tr td{margin:5px; padding:5px}
+
+table.TB_General_style01{}
+table.TB_General_style01 tr{}
+table.TB_General_style01 tr td{border-top-width:0px; border-right-width:0px; border-bottom-width:1px; border-left-width:0px; border-top-style:dotted; border-right-style:dotted; border-bottom-style:dotted; border-left-style:dotted; border-top-color:#CCC; border-right-color:#CCC; border-bottom-color:#CCC; border-left-color:#CCC; margin:5px; padding-top:5px; padding-bottom:5px}
+
+table.TB_General_style02{}
+table.TB_General_style02 tr{}
+table.TB_General_style02 tr td{border-top-width:1px; border-right-width:0px; border-bottom-width:1px; border-left-width:0px; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid; border-top-color:#CCC; border-right-color:#CCC; border-bottom-color:#CCC; border-left-color:#CCC; margin:5px; padding:5px}
+
+tr.TR_Odd_Color_Style{background-color:#FFF}
+tr.TR_Even_Color_Style{background-color:#FBFBFB}
+
+.Form_Texture_Area{width:100%; margin-right:5px; display:block}
+
+.Form_Required_Item{color:#F00; font-size:small}
+
+.Form_Caption_Word{color:#666; font-size:small}
+
+.ErrorInputWord{font-size:16px; font-weight:bold; color:#F00}
+
+.TipBrowser{font-size:small; color:#F00}
+
+.DivHight5px{height:5px}
+
+div.PageSelectBoard{margin:10px 0px;}
+div.PageSelectBoard a{border-radius:4px;padding:6px 12px;line-height:1.42857143;color:#337ab7;text-decoration:none;background-color:#fff;border:1px solid #ddd;behavior:url(http://www.shop3500.com/PIE.htc)}
+div.PageSelectBoard a:hover,.div.PageSelectBoard a:focus{border-radius:4px;padding:6px 12px;line-height:1.42857143;text-decoration:none;color:#23527c;background-color:#EEE;border-color:#ddd;text-decoration:none}
+div.PageSelectBoard span{border-radius:4px;padding:6px 12px;line-height:1.42857143;color:#D1D1D1;text-decoration:none;background-color:#fff;border:1px solid #ddd;behavior:url(http://www.shop3500.com/PIE.htc)}
+div.PageSelectBoard span.Record_Board{color:#333}
+
+.acc{padding:5px; border:solid 1px #CCC; outline:0; background:#FFF left top repeat-x; box-shadow:rgba(0,0,0,0.1) 0px 0px 8px inset; -moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px inset; -webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px inset; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px}
+
+input, textarea{padding:5px; border:solid 1px #CCC; outline:0; background:#FFF left top repeat-x; box-shadow:rgba(0,0,0,0.1) 0px 0px 8px inset; -moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px inset; -webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px inset; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px}
+
+textarea{}
+
+input:hover, textarea:hover, 
+input:focus, textarea:focus{border-color:#C9C9C9; -webkit-box-shadow:rgba(0,0,0,0.25) 0px 0px 8px}
+
+input:disabled{background-color:#EEE}
+
+.form label{margin-left:10px; color:#999}
+
+.submit input{width:auto; padding:9px 15px; background:#617798; border:0; color:#FFF; -moz-border-radius:5px; -webkit-border-radius:5px}
+
+select{background:transparent;  padding:5px;  line-height:1;  border:solid 1px #CCC;  -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; box-shadow:rgba(0,0,0,0.1) 0px 0px 8px; -moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px; -webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px}
+
+select option{border:solid 1px #CCC}
+

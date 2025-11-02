@@ -1,0 +1,29 @@
+﻿#navcss3{margin:0; padding:7px 6px 0; background:#7d7d7d url(img/gradient.png) repeat-x 0 -110px; line-height:100%}
+#navcss3 li{margin:0 5px; padding:0 0 8px; float:left; position:relative; list-style:none}
+
+#navcss3 a{color:#e7e5e5; display:block; padding: 8px 20px; margin:0}
+#navcss3 a:hover{background:#000; color:#fff}
+
+#navcss3 .current a, #navcss3 li:hover >a{background:#666 url(img/gradient.png) repeat-x 0 -40px; color:#444}
+
+#navcss3 ul li:hover a, #navcss3 li:hover li a{background:none; border:none; color:#666}
+#navcss3 ul a:hover{background:#0078ff url(img/gradient.png) repeat-x 0 -100px !important; color:#fff !important}
+
+#navcss3 li:hover >ul{display:block}
+
+#navcss3 ul{display:none; margin:0; padding:0; width:185px; position:absolute; top:35px; left:0; background:#ddd url(img/gradient.png) repeat-x 0 0; border:solid 1px #b4b4b4}
+#navcss3 ul li{float:none; margin:0; padding:0}
+
+#navcss3 ul a{}
+
+#navcss3 ul ul{left:181px; top:-3px}
+
+#navcss3 ul li:first-child >a{}
+#navcss3 ul li:last-child >a{}
+
+#navcss3:after{content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0}
+#navcss3{display:inline-block}
+
+html[xmlns] #navcss3{display:block}
+ 
+* html #navcss3{height:1%}

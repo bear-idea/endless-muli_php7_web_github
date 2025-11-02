@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordNewsListItem" value="name:item_id;datatype:int,name:list_id;datatype:int,name:listname;datatype:string,name:itemname;datatype:string,name:lang;datatype:string" />
+	<infoitem key="UD_RecordSponsorListItem" value="name:item_id;datatype:int,name:list_id;datatype:int,name:listname;datatype:string,name:itemname;datatype:string,name:lang;datatype:string" />
+</info>

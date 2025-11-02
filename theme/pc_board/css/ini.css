@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+
+/*@font-face {
+  font-family: 'cwTeXHei';
+  font-style:normal;
+  font-weight:bolder;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, 
+img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b,  
+center, dl, dt, dd, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td{margin:0; padding:0}
+body, button, input, select, textarea{font-family:Arial,"文泉驛正黑","WenQuanYi Zen Hei","儷黑 Pro","LiHei Pro","微軟正黑體","Microsoft JhengHei",sans-serif;}
+address, cite, dfn, em, var{}
+code, kbd, pre, samp{font-family:courier new,courier,monospace}
+ul, ol{list-style:none}
+/*sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}*/
+fieldset, img{border:0}
+button, input, select, textarea{font-size:100%}
+
+table{}
+
+html, body{height:100%}
+
+#Bk_Anime_Wrapper, #Main_Wrapper, #Middle_Wrapper, #wrapper, #Bk_Home_Body_Wrapper, #Bk_Home_Anime_Wrapper, #Bk_Home_Bottom_Wrapper{ min-height:100%}
+
+html{font-size:small;}
+
+img{border:0px; vertical-align:bottom}
+
+ol, li, ul{/*margin:0px; padding:0px*/}
+
+body{line-height:1.5}
+
+a{ outline:none;  hlbr:expression(this.onFocus=this.blur()); text-decoration:none}
+
+a:link{}
+a:visited{}
+a:hover{text-decoration:underline}
+
+hr{height:1px; border-top-width:1px; border-top-style:solid; border-right-style:none; border-bottom-style:none; border-left-style:none; border-top-color:#EAEAEA;}
+
+.mdbanner{min-height:1px; _height:1px}
+.mdbanner_t{position:relative; font-size:12px}
+.mdbanner_t_l, .mdbanner_t_r{position:absolute; top:0px; font-size:1px; overflow:hidden}
+.mdbanner_t_l{left:0}
+.mdbanner_t_r{right:0; float:right}
+.mdbanner_t_m{position:absolute; text-align:left; height:20px; line-height:20px}
+.mdbanner_t_m h3{font-size:14px; width:120px}
+.mdbanner_t_c{position:relative; text-align:left; overflow:hidden}
+.mdbanner_t_c span.a_a{text-decoration:none}
+.mdbanner_c{position:relative; overflow:hidden}
+.mdbanner_c .mdbanner_m_t, .mdbanner_c .mdbanner_m_c, .mdbanner_c .mdbanner_m_b{padding:0 0px}
+.mdbanner_c .mdbanner_m_t, .mdbanner_c .mdbanner_m_b{text-align:left}
+.mdbanner_c_l, .mdbanner_c_r{position:absolute; top:0; font-size:1px}
+
+.mdbanner_c_l{left:0}
+.mdbanner_c_r{right:0}
+.mdbanner_c_c{position:relative; zoom:1}
+.mdbanner_b{position:relative; overflow:hidden}
+.mdbanner_b_l, .mdbanner_b_r{position:absolute; top:0; font-size:1px}
+.mdbanner_b_l{left:0}
+.mdbanner_b_r{right:0}
+
+.mdmiddle{min-height:1px; _height:1px}
+.mdmiddle_t{position:relative; font-size:12px}
+.mdmiddle_t_l, .mdmiddle_t_r{position:absolute; top:0px; font-size:1px; overflow:hidden}
+.mdmiddle_t_l{left:0}
+.mdmiddle_t_r{right:0; float:right}
+.mdmiddle_t_m{position:absolute; text-align:left; height:20px; line-height:20px}
+.mdmiddle_t_m h3{font-size:14px; width:120px}
+.mdmiddle_t_c{position:relative; text-align:left; overflow:hidden}
+.mdmiddle_t_c span.a_a{text-decoration:none}
+.mdmiddle_c{position:relative; overflow:hidden}
+.mdmiddle_c .mdmiddle_m_t, .mdmiddle_c .mdmiddle_m_c, .mdmiddle_c .mdmiddle_m_b{padding:0 0px}
+.mdmiddle_c .mdmiddle_m_t, .mdmiddle_c .mdmiddle_m_b{text-align:left}
+.mdmiddle_c_l, .mdmiddle_c_r{position:absolute; top:0; font-size:1px}
+
+.mdmiddle_c_l{left:0}
+.mdmiddle_c_r{right:0}
+.mdmiddle_c_c{position:relative; zoom:1}
+.mdmiddle_b{position:relative; overflow:hidden}
+.mdmiddle_b_l, .mdmiddle_b_r{position:absolute; top:0; font-size:1px}
+.mdmiddle_b_l{left:0}
+.mdmiddle_b_r{right:0}
+
+.mdtitle{min-height:1px; _height:1px}
+.mdtitle_t{position:relative; font-size:12px}
+.mdtitle_t_l, .mdtitle_t_r{position:absolute; top:0px; font-size:1px; overflow:hidden}
+.mdtitle_t_l{left:0}
+.mdtitle_t_r{right:0; float:right}
+.mdtitle_t_m{position:absolute; text-align:left; height:20px; line-height:20px}
+.mdtitle_t_m h3{font-size:14px; width:120px}
+.mdtitle_t_c{position:relative; text-align:left; overflow:hidden}
+.mdtitle_t_c span.a_a{text-decoration:none}
+.mdtitle_c{position:relative; overflow:hidden}
+.mdtitle_c .mdtitle_m_t, .mdtitle_c .mdtitle_m_c, .mdtitle_c .mdtitle_m_b{padding:0 0px}
+.mdtitle_c .mdtitle_m_t, .mdtitle_c .mdtitle_m_b{text-align:left}
+.mdtitle_c_l, .mdtitle_c_r{position:absolute; top:0; font-size:1px}
+
+.mdtitle_c_l{left:0}
+.mdtitle_c_r{right:0}
+.mdtitle_c_c{position:relative; zoom:1}
+.mdtitle_b{position:relative; overflow:hidden}
+.mdtitle_b_l, .mdtitle_b_r{position:absolute; top:0; font-size:1px}
+.mdtitle_b_l{left:0}
+.mdtitle_b_r{right:0}
+
+.mdviewline{min-height:1px; _height:1px}
+.mdviewline_t{position:relative; font-size:12px}
+.mdviewline_t_l, .mdviewline_t_r{position:absolute; top:0px; font-size:1px; overflow:hidden}
+.mdviewline_t_l{left:0}
+.mdviewline_t_r{right:0; float:right}
+.mdviewline_t_m{position:absolute; text-align:left; height:20px; line-height:20px}
+.mdviewline_t_m h3{font-size:14px; width:120px}
+.mdviewline_t_c{position:relative; text-align:left; overflow:hidden}
+.mdviewline_t_c span.a_a{text-decoration:none}
+.mdviewline_c{position:relative; overflow:hidden}
+.mdviewline_c .mdviewline_m_t, .mdviewline_c .mdviewline_m_c, .mdviewline_c .mdviewline_m_b{padding:0 0px}
+.mdviewline_c .mdviewline_m_t, .mdviewline_c .mdviewline_m_b{text-align:left}
+.mdviewline_c_l, .mdviewline_c_r{position:absolute; top:0; font-size:1px}
+
+.mdviewline_c_l{left:0}
+.mdviewline_c_r{right:0}
+.mdviewline_c_c{position:relative; zoom:1}
+.mdviewline_b{position:relative; overflow:hidden}
+.mdviewline_b_l, .mdviewline_b_r{position:absolute; top:0; font-size:1px}
+.mdviewline_b_l{left:0}
+.mdviewline_b_r{right:0}
+
+.g_p_fill{padding-bottom:32767px; margin-bottom:-32767px}
+.g_p_hide{overflow:hidden; display:block!important; display:inline-block}
+

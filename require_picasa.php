@@ -1,0 +1,1 @@
+<?php include($TplPath . "/picasa_view.php"); ?>

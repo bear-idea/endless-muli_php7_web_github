@@ -1,0 +1,99 @@
+﻿a
+{
+    outline: none;
+}
+div.menuTree
+{
+	width: 200px;
+	border: 1px solid #F5F5F5;
+	text-align: left;
+}
+div.menuTree UL
+{
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    display:none; /* 若要讓全部選單展開將此註解 */
+}
+div.menuTree UL LI
+{
+	list-style: none;
+	white-space: nowrap;
+	line-height: 20px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+div.menuTree UL LI UL LI
+{
+    /*padding-left: 20px;*/
+	margin-left: -15px;
+}
+
+div.menuTree UL LI UL LI UL LI
+{
+   /* padding-left: 20px;*/
+   margin-left: -15px;
+}
+
+div.menuTree UL LI
+{
+    
+}
+div.menuTree UL LI.parent A
+{
+	color: #F4008F;
+	text-decoration: none;
+	background-color: #F0F0F0;
+	display: block;
+	margin-bottom: 2px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	background-repeat: repeat;
+}
+div.menuTree UL LI UL LI.parent A
+{
+}
+div.menuTree UL LI.parent A:hover
+{
+    font-weight: bold;
+    font-size: 110%;
+}
+div.menuTree UL LI.child A
+{
+	color: #FB7F2D;
+	text-decoration: none;
+	padding: 0px 2px;
+	background-color: #F0F0F0;
+	display: block;
+	margin-bottom: 2px;
+}
+div.menuTree UL LI.child A:hover
+{
+	font-weight: bold;
+	font-size: 110%;
+	border: 2px dotted #CDCDCD;	/*background-image: url(images/menu_hover.png);
+	background-position: left top;*/
+}
+div.menuTree UL LI.parent
+{
+	background-image: url(images/collapsed_image.gif);
+	background-repeat: no-repeat;
+	background-position: left top;	
+}
+div.menuTree UL LI.expanded
+{
+	background-image: url(images/expended_image.gif);
+	background-repeat: no-repeat;
+	background-position: left top;	
+}
+div.menuTree UL LI.child
+{
+	/*background-image: url(images/none_image.gif);
+	background-repeat: no-repeat;
+	background-position: left top;	*/
+}

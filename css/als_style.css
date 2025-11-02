@@ -1,0 +1,135 @@
+.als-container {
+	position: relative;
+	width: 192px;
+	margin: 0px auto;
+	background-color:#FF0;
+	padding:0px;
+}
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin-left:1px;
+	background-color:#C00;
+	padding:0px;
+}
+
+.als-wrapper {
+	position: relative;
+	list-style: none;
+	background-color:#3F0;
+	width:100%;
+}
+
+.als-item {
+	position: relative;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+}
+
+
+/**************************
+ * specific als elements
+ * styling for #lista1
+ **************************/
+
+#lista1 {
+}
+
+#lista1 .als-item {
+	margin: 0;
+	min-height: 82px;
+	min-width: 82px;
+	overflow: hidden;
+}
+
+.als-item {
+	text-align: center;
+	display: table-cell;
+	*display: block;      
+	*font-size: 175px;  
+	margin:2px;
+	vertical-align: middle;
+}
+
+vertical-align: middle;
+}
+
+#lista1 .als-item img {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+}
+
+#lista1 .als-prev, #lista1 .als-next {
+	top: 35px;
+	width: 15px;
+	height: 22px;
+}
+
+#lista1 .als-prev {
+	left: -10px;
+	opacity:0.5;
+}
+
+#lista1 .als-next {
+	right: -10px;
+	opacity:0.5;
+}
+
+/**************************
+ * specific als elements
+ * styling for #lista1
+ **************************/
+
+#lista2 {
+}
+
+#lista2 .als-item {
+	margin: 2px;;
+	min-height: 82px;
+	min-width: 82px;
+	overflow: hidden;
+}
+
+.als-item {
+	text-align: center;
+	display: table-cell;
+	*display: block;      
+	*font-size: 175px;  
+	margin:2px;
+	vertical-align: middle;
+}
+
+vertical-align: middle;
+}
+
+#lista2 .als-item img {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+}
+
+#lista2 .als-prev, #lista2 .als-next {
+	top: 35px;
+	width: 15px;
+	height: 22px;
+}
+
+#lista2 .als-prev {
+	left: -10px;
+	opacity:0.5;
+}
+
+#lista2 .als-next {
+	right: -10px;
+	opacity:0.5;
+}

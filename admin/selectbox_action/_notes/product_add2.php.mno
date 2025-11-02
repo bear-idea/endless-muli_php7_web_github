@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordProductListItem" value="name:item_id;datatype:int,name:subitem_id;datatype:int,name:list_id;datatype:int,name:itemname;datatype:string,name:level;datatype:int,name:lang;datatype:string" />
+</info>

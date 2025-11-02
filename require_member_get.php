@@ -1,0 +1,72 @@
+<?php require_once('Connections/DB_Conn.php'); ?>
+<?php //require_once('require_member_limit_login.php'); // 限制存取頁面?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  Global $DB_Conn;
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = mysqli_real_escape_string($DB_Conn, $theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+/* 取得資料 */
+$colname_RecordMember = "-1";
+$account = "account";
+if (isset($_SESSION['MM_Username_' . $_GET['wshop']])) {
+  $colname_RecordMember = $_SESSION['MM_Username_' . $_GET['wshop']];
+}else if (isset($_SESSION['fb_id']) && $_SESSION['success_fb_login_backstage_'.$_GET['wshop']] == '1') {
+  $colname_RecordMember = $_SESSION['fb_id'];
+  $account = "fbid";
+}else if (isset($_SESSION['line_id']) && $_SESSION['success_line_login_backstage_'.$_GET['wshop']] == '1') {
+  $colname_RecordMember = $_SESSION['line_id'];
+  $account = "lineid";
+}else if (isset($_SESSION['google_id']) && $_SESSION['success_google_login_backstage_'.$_GET['wshop']] == '1') {
+  $colname_RecordMember = $_SESSION['google_id'];
+  $account = "googleid";
+}
+$collang_RecordMember = "zh-tw";
+if (isset($_GET['lang'])) {
+  $collang_RecordMember = $_GET['lang'];
+}
+$coluserid_RecordMember = "-1";
+if (isset($_SESSION['userid'])) {
+  $coluserid_RecordMember = $_SESSION['userid'];
+}
+//mysqli_select_db($database_DB_Conn, $DB_Conn);
+$query_RecordMember = sprintf("SELECT * FROM demo_member WHERE $account = %s && lang = %s && userid=%s", GetSQLValueString($colname_RecordMember, "text"),GetSQLValueString($collang_RecordMember, "text"),GetSQLValueString($coluserid_RecordMember, "int"));
+$RecordMember = mysqli_query($DB_Conn, $query_RecordMember) or die(mysqli_error($DB_Conn));
+$row_RecordMember = mysqli_fetch_assoc($RecordMember);
+$totalRows_RecordMember = mysqli_num_rows($RecordMember);
+?>
+<?php
+mysqli_free_result($RecordMember);
+?>

@@ -1,0 +1,96 @@
+﻿@charset "utf-8";
+/*************************************
+ *  框架設定
+**************************************/
+/* 外框 */
+#wrapper {
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+}
+/*-----------------------------------*/
+
+/* 頁首 */
+#wrapper #header {
+	width: auto;
+}
+#wrapper #header #context{
+	/*height: 50px;*/
+	margin: 0px;
+}
+/*-----------------------------------*/
+
+/* 橫幅 */
+#wrapper #banner {
+	width: auto;
+}
+#wrapper #banner #context{
+	/*height: 80px;*/
+	margin: 0px;
+}
+/*-----------------------------------*/
+
+/* 左邊欄位 */
+#wrapper #Left_column {
+	width: 0px;
+	float: left;
+	display: none;
+}
+#wrapper #Left_column #context{
+	/*height: 200px;*/
+	margin: 0px;
+	display: none;
+}
+/*-----------------------------------*/
+
+/* 右邊欄位容器 */
+#wrapper #Content_containter {
+	float: right;
+	width: 100%;
+	/*height: 150px;*/
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*-----------------------------------*/
+
+/* 主要內容欄位 */
+#wrapper #Content_containter #Main_content {
+	float: right;
+	width: 100%;
+	margin-right: 0px;
+	text-align: justify;
+	word-break:break-all;
+	dispaly: block;
+}
+
+#wrapper #Content_containter #Main_content #context {
+	/*height: 200px;*/
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/*-----------------------------------*/
+
+/* 右邊欄位 */
+#wrapper #Content_containter #Rght_column {
+	float: right;
+	width: 0px;
+	display: none;
+}
+#wrapper #Content_containter #Rght_column #context{
+	height: 200px;
+	margin: 0px;
+	display: none;
+}
+/*-----------------------------------*/
+
+/* 頁尾 */
+#wrapper #footer {
+	clear: both;
+}
+
+#wrapper #footer #context{
+	margin: 0px;
+}

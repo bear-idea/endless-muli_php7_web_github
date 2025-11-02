@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordDfTypeMultiSiteMap_l1" value="name:id;datatype:int,name:areaidentifier;datatype:string,name:identifier;datatype:string,name:title;datatype:string,name:skeyword;datatype:string,name:sdescription;datatype:string,name:content;datatype:blob,name:postdate;datatype:timestamp,name:indicate;datatype:int,name:home;datatype:int,name:notes1;datatype:string,name:notes2;datatype:string,name:typemenu;datatype:string,name:link;datatype:string,name:sortid;datatype:int,name:lang;datatype:string,name:userid;datatype:int" />
+</info>

@@ -1,0 +1,26 @@
+<div class="card bg-silver-lighter" style="overflow:hidden">
+  <div class="card-block">
+    <h4 class="card-title m-0"><i class="far fa-bookmark"></i> 出庫物料 <small>選擇</small> <?php require("require_lang_show.php"); ?></h4>
+  </div>
+</div>
+
+<!-- begin panel -->
+<div class="panel panel-inverse bg-white-transparent-9"> 
+  <!-- begin panel-heading -->
+  <div class="panel-heading">
+    <div class="panel-heading-btn"> <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a> <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a> <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a> </div>
+    <h4 class="panel-title"><i class="fa fa-list-ul"></i> 模式選擇</h4>
+  </div>
+  <!-- end panel-heading --> 
+  <!-- begin panel-body -->
+  <div class="panel-body">
+  
+  <a href="manage_scaleorder_out.php?wshop=<?php echo $wshop;?>&amp;Opt=outaddnewpage&amp;lang=<?php echo $_SESSION['lang']; ?>" class="btn btn-lg btn-green btn-block"><i class="fab fa-2x fa-wpforms pull-left"></i><i class="fas fa-2x fa-chevron-circle-right pull-right"></i> 全新出貨單<br /><small>建立一個全新空白出貨單，將庫存物料加入至出貨單</small></a>
+  
+  <a href="manage_scaleorder_out.php?wshop=<?php echo $wshop;?>&amp;Opt=outaddoldpage&amp;lang=<?php echo $_SESSION['lang']; ?>" class="btn btn-lg btn-success btn-block"><i class="fab fa-2x fa-wpforms pull-left"></i><i class="fas fa-2x fa-chevron-circle-right pull-right"></i> 舊有出貨單<br /><small>由已建立的出貨單選擇，將庫存物料加入至出貨單</small></a>
+  
+        
+  </div>
+  <!-- end panel-body --> 
+</div>
+<!-- end panel -->

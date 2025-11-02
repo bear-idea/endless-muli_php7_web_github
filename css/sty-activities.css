@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+/***********************************************
+ * view_activities.php [ 主要頁面 ]
+ ***********************************************/
+/*   
+ * 標題部分之設定樣式 
+ */
+ 
+/*-----------------------------------*/
+
+/*   
+ * 內容部分之設定樣式 
+ */
+
+/*-----------------------------------*/
+
+/*   
+ * 當無資料顯示時之設定樣式 
+ */
+
+/*-----------------------------------*/
+
+/***********************************************
+ * detailed_activities.php [ 詳細頁面 ]
+ ***********************************************/
+/*   
+ * 標題部分之設定樣式 
+ */
+ 
+/*-----------------------------------*/
+
+/*   
+ * 內容部分之設定樣式  
+ */
+ 
+ /* ### 詳細說明表格樣式 ### */
+ table.Act_Context_Explain
+ {
+	border: 3px double #CCC;
+ }
+  table.Act_Context_Explain tr td
+ {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	padding: 5px;
+ }
+
+/* ### 相片主標題之設定樣式 ### */
+ div.Act_Photo_Title 
+ {
+	text-align: center;	
+	border: 3px double #CCC; 
+ }
+
+/* ### 相片部分之設定樣式 ### */
+ div.Act_Photo
+ {
+	border: 3px double #CCC;
+	padding: 5px;
+	float: left;
+	width: 200px;
+ }
+
+/*-----------------------------------*/
+
+/*   
+ * 當無資料顯示時之設定樣式 
+ */
+
+/*-----------------------------------*/
+
+

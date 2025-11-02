@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordNewsListItem" value="name:l0_id;datatype:int,name:naviname;datatype:string,name:navilink;datatype:string,name:navilinkpage;datatype:string,name:navilinktype;datatype:string,name:navilinkstate;datatype:string,name:navilinkother;datatype:string,name:indicate;datatype:int,name:sortid;datatype:int,name:lang;datatype:string" />
+	<infoitem key="UD_RecordMenuListNavi" value="name:l0id;datatype:int,name:naviname;datatype:string,name:navilink;datatype:string,name:navilinkpage;datatype:string,name:navilinktype;datatype:string,name:navilinkstate;datatype:string,name:navilinkother;datatype:string,name:indicate;datatype:int,name:sortid;datatype:int,name:lang;datatype:string" />
+</info>

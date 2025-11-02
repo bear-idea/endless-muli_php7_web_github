@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordBlogReTitle" value="name:title;datatype:string,name:wshop;datatype:string" />
+	<infoitem key="UD_RecordProducSptFormat" value="name:pid;datatype:int,name:aid;datatype:int,name:formatname;datatype:string,name:formatselect;datatype:string,name:price;datatype:string,name:spprice;datatype:string,name:sdescription;datatype:string,name:pic;datatype:string,name:postdate;datatype:timestamp,name:indicate;datatype:int,name:notes1;datatype:string,name:notes2;datatype:string,name:sortid;datatype:int,name:lang;datatype:string,name:userid;datatype:int" />
+</info>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordProductRater" value="name:id;datatype:int,name:pdid;datatype:int,name:starnumber;datatype:int,name:starvalue;datatype:int,name:userid;datatype:int" />
+	<infoitem key="UD_RecordBnbRater" value="name:id;datatype:int,name:pdid;datatype:int,name:starnumber;datatype:int,name:starvalue;datatype:int,name:userid;datatype:int" />
+</info>

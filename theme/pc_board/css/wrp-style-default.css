@@ -1,0 +1,104 @@
+﻿@charset "utf-8";
+#Top_Content{width:100%; position:fixed; z-index:1000; overflow:hidden; height:30px; background-image:url(../../../images/top_line.png); background-repeat:repeat-x; vertical-align:middle; color:#666}
+#Top_Content a, #Top_Content a:hover{color:#666}
+#Top_Content img{margin-top:4px; margin-left:2px; margin-right:2px; border:0px #CCC solid; max-height:20px}
+#Top_Content .top_content{margin-top:3px; margin-left:4px; margin-right:4px}
+#Top_Content .top_line{border-top-width:0px; border-right-width:1px; border-bottom-width:0px; border-left-width:0px; border-top-style:solid; border-right-style:solid; border-bottom-style:solid; border-left-style:solid; border-top-color:#CCC; border-right-color:#CCC; border-bottom-color:#CCC; border-left-color:#CCC; overflow:hidden; width:0px; margin-right:1px; margin-left:1px; height:26px; margin-top:1px;}
+
+#Bk_Anime_Wrapper, #Bk_Home_Anime_Wrapper, #Bk_Home_Bottom_Wrapper, #Bk_Home_Body_Wrapper{margin-top:30px; top:0; left:0; width:100%; hight:100%; position:absolute;}
+
+#Bk_Anime_Destroy{}
+
+#Middle_Wrapper, #wrapper{}
+#Main_Wrapper{hight:100%}
+#wrapper{min-width:800px; min-hight:100%; text-align:center; position:relative}
+
+#wrapper #header{bottom:0; position:relative; z-index:600}
+#wrapper #header #context{text-align:justify; word-break:normal;   dispaly:block; margin-bottom:0px}
+
+#wrapper #banner{position:relative; z-index:1; margin:0px; padding:0px}
+#wrapper #banner #context{text-align:center; word-break:normal;   dispaly:block; margin-bottom:0px}
+
+#wrapper #Left_column{position:relative; z-index:550; text-align:center;}
+#wrapper #Left_column #context{}
+
+#wrapper #Right_column{position:relative; z-index:550; text-align:center;}
+#wrapper #Right_column #context{}
+
+#wrapper #Content_containter{height:100%}
+
+#wrapper #Content_containter #Main_content{z-index:-1;text-align:left;word-break:break-all;}
+
+#wrapper #Content_containter #Main_content #context ol{list-style-type:decimal}
+
+#wrapper #Content_containter #Main_content #context ul{list-style-type:disc}
+
+#wrapper #Content_containter #Main_content #context ol, #wrapper #Content_containter #Main_content #context ul{list-style-type: disc; list-style-position: inside; }
+
+#wrapper #Content_containter #Main_content li {display: list-item }
+
+#wrapper #Content_containter #Main_content #context .xbreadcrumbs li, #wrapper #Content_containter #Main_content #context .ui-tabs li, #wrapper #Content_containter #Main_content #context .rater-star li{list-style:none}
+
+/*#wrapper #Content_containter #Main_content #context table { border-spacing: 2px;}*/
+
+#wrapper #Content_containter #Main_content #context caption, #wrapper #Content_containter #Main_content #context th, #wrapper #Content_containter #Main_content #context td {font-weight: normal;}
+
+#wrapper #Content_containter #Main_content #context{text-align:left; word-break:normal;  z-index:-1;}
+
+.div_table-cell img, .div_table-cell_frilinkqlink img{max-width:100%!important; height:auto!important;}
+
+#wrapper #Content_containter #Rght_column{}
+#wrapper #Content_containter #Rght_column #context{text-align:left; word-break:normal;   dispaly:block; height:100%}
+
+#wrapper #footer{width:100%; position:relative}
+
+#wrapper #footer #floatblock{position:absolute; width:1200px; z-index:9990; float:left; padding:0px; display:block; clear:both; margin-bottom:0px}
+
+#wrapper #footer #context{text-align:center; word-break:normal;}
+
+#Main_Wrapper{height:100%; margin:0px; padding:0px; vertical-align:top}
+
+#Main_Wrapper #Middle_Wrapper{text-align:center;  vertical-align:top; position:relative}
+
+#Main_Wrapper #Left_Background{}
+
+#Main_Wrapper #Right_Background{}
+
+#abgne_float_ad{display:none; position:absolute; z-index:10000; zoom:1}
+
+#abgne_float_ad .abgne_close_ad{display:block; text-align:right; cursor:pointer; font-size:12px}
+#abgne_float_ad a img{border:none}
+
+#abgne_float_left_menu{position:absolute; display:block; z-index:2500; left:-25px; top:200px; width:50px}
+
+#abgne_float_left_top, #abgne_float_left_context, #abgne_float_left_bottom{position:relative; cursor:pointer}
+
+#abgne_float_left_context{}
+
+#abgne_float_left_bottom{}
+
+#abgne_float_right_menu{width:50px; position:absolute; display:block; z-index:2500; left:960px; top:200px; margin-top:0px}
+
+#abgne_float_right_top, #abgne_float_right_context, #abgne_float_right_bottom{position:relative; cursor:pointer}
+
+#abgne_float_right_context{}
+
+#abgne_float_right_bottom{}
+
+#abgne_float_lang_menu{width:500px; position:absolute; display:block; z-index:2500; right:20px; top:5px; margin-top:0px; text-align:left}
+
+#board_footer{position:fixed; bottom:0; height:60px; width:100%; margin-bottom:0px; left:0; z-index:9500; text-align:center}
+
+#right-fixed-center a{width:46px; height:104px; position:fixed; top:50%; left:50%; margin-left:522px; margin-top:-52px;  z-index:2; background-image:url(../images/r_arr.png); background-repeat:no-repeat; display:block;}
+#right-fixed-center a:hover{background-image:url(../images/r_arr_o.png); background-repeat:no-repeat; cursor:pointer}
+#left-fixed-center a{width:46px; height:104px; position:fixed; top:50%; left:50%; margin-left:-571px; margin-top:-52px; _position:absolute; z-index:2; background-image:url(../images/l_arr.png); background-repeat:no-repeat; display:block;}
+
+#left-fixed-center a:hover{background-image:url(../images/l_arr_o.png); background-repeat:no-repeat; cursor:pointer}
+
+.scrollup{width:40px; height:40px; opacity:0.7; position:fixed; bottom:50px; right:100px; display:none; text-indent:-9999px; background-image:url(../../../images/icon_top.png); background-repeat:no-repeat}
+
+#wrapper #Content_containter #Main_content img{max-width: 950px; height:auto;}
+
+#cart_counter{position:absolute; right:0; background-color:#C30; width:20px; height:20px; line-height:20px;-webkit-border-radius:10px;-moz-border-radius: 10px;border-radius: 10px; color:#FFFFFF;}
+
+.xbreadcrumbs li i {margin-right:0px;}

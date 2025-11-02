@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecordSite" value="name:id;datatype:int,name:name;datatype:string,name:webname;datatype:string,name:hot;datatype:int,name:plushot;datatype:int,name:webrenewdate;datatype:datetime,name:usetime;datatype:int,name:SiteDecsHome;datatype:string,name:userid;datatype:int,name:SiteFBShowImage;datatype:string,name:SiteIndicate;datatype:int" />
+</info>

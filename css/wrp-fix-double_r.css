@@ -1,0 +1,25 @@
+﻿@charset "utf-8"; 
+
+#wrapper{margin:auto; margin-left:auto; margin-top:0px; margin-bottom:0px}
+
+#wrapper #header{width:auto}
+#wrapper #header #context{margin:0px}
+
+#wrapper #banner{}
+#wrapper #banner #context{margin:0px}
+
+#wrapper #Left_column{width:250px; float:left}
+#wrapper #Left_column #context{margin:0px}
+
+#wrapper #Content_containter{float:right; width:100%; margin-left:-250px; margin-right:0px}
+
+#wrapper #Content_containter #Main_content{float:left; width:100%; margin-right:-250px}
+
+#wrapper #Content_containter #Main_content #context{margin-right:250px; margin-left:260px; margin-top:0px; margin-bottom:0px; text-align:justify; word-break:break-all}
+
+#wrapper #Content_containter #Rght_column{float:right; width:250px}
+#wrapper #Content_containter #Rght_column #context{margin:0px}
+
+#wrapper #footer{clear:both}
+
+#wrapper #footer #context{margin:0px}

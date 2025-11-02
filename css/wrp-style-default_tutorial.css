@@ -1,0 +1,77 @@
+﻿@charset "utf-8"; 
+
+#Bk_Anime_Wrapper{top:0; left:0; width:100%; hight:100%; position:absolute; background-attachment:fixed}
+
+#Bk_Wrapper{}
+#Bk_Anime_Destroy{}
+
+#Middle_Wrapper, #wrapper{width:960px}
+#Main_Wrapper{hight:100%}
+#wrapper{min-width:800px; min-hight:100%; text-align:center; margin-top:0px; margin-bottom:0px; position:relative; padding-right:5px; padding-left:5px; border:0px solid #DDD}
+
+#wrapper #header{bottom:0; position:relative; z-index:5}
+#wrapper #header #context{text-align:justify; word-break:normal;   dispaly:block; margin-bottom:5px}
+
+#wrapper #banner{position:relative; z-index:1; margin:0px; padding:0px}
+#wrapper #banner #context{word-break:normal;   dispaly:block; text-align:left}
+
+#wrapper #Left_column{position:relative; z-index:2}
+#wrapper #Left_column #context{height:100%}
+
+#wrapper #Content_containter{}
+
+#wrapper #Content_containter #Main_content{z-index:-1}
+
+#wrapper #Content_containter #Main_content #context{text-align:justify;  word-break:keep-all; z-index:-1}
+
+#wrapper #Content_containter #Main_content #context img{max-width:100%!important; height:auto!important; width:expression(this.width >600 ? "600px":this.width)!important}
+
+.wrp-content{margin-top:5px; margin-right:5px; margin-bottom:5px; margin-left:5px; padding-top:0px; padding-right:10px; padding-bottom:0px; padding-left:10px}
+
+#wrapper #Content_containter #Rght_column{}
+#wrapper #Content_containter #Rght_column #context{text-align:justify; word-break:normal;   dispaly:block; height:100%}
+
+#wrapper #footer{width:100%; position:relative}
+
+#wrapper #footer #floatblock{position:absolute; width:1200px; z-index:9990; float:left; padding:0px; display:block; clear:both; margin-top:-100px; margin-left:-100px; margin-right:auto}
+
+#wrapper #footer #context{text-align:center; word-break:normal;   color:#666}
+
+#Main_Wrapper{height:100%; margin:0px; padding:0px; vertical-align:top}
+
+#Main_Wrapper #Middle_Wrapper{text-align:center;  vertical-align:top}
+
+#Main_Wrapper #Left_Background{}
+
+#Main_Wrapper #Right_Background{}
+
+#abgne_float_ad{display:none; position:absolute; z-index:10000; zoom:1}
+
+#abgne_float_ad .abgne_close_ad{display:block; text-align:right; cursor:pointer; font-size:12px}
+#abgne_float_ad a img{border:none}
+
+#abgne_float_left_menu{position:absolute; display:block; z-index:2500; left:-25px; top:200px; width:50px}
+
+#abgne_float_left_top, #abgne_float_left_context, #abgne_float_left_bottom{position:relative; cursor:pointer}
+
+#abgne_float_left_context{}
+
+#abgne_float_left_bottom{}
+
+#abgne_float_right_menu{width:50px; position:absolute; display:block; z-index:2500; left:1010px; top:200px; margin-top:0px}
+
+#abgne_float_right_top, #abgne_float_right_context, #abgne_float_right_bottom{position:relative; cursor:pointer}
+
+#abgne_float_right_context{}
+
+#abgne_float_right_bottom{}
+
+#abgne_float_lang_menu{width:500px; position:absolute; display:block; z-index:2500; right:20px; top:5px; margin-top:0px; text-align:left}
+
+#board_footer{position:fixed; bottom:0; height:60px; width:100%; margin-bottom:0px; left:0; z-index:9500; text-align:center}
+
+#right-fixed-center a{width:46px; height:104px; position:fixed; top:50%; left:50%; margin-left:522px; margin-top:-52px; _position:absolute;   _top:expression(documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight)/2); _margin-top:0; z-index:2; background-image:url(../images/r_arr.png); background-repeat:no-repeat; display:block}
+#right-fixed-center a:hover{background-image:url(../images/r_arr_o.png); background-repeat:no-repeat; cursor:pointer}
+#left-fixed-center a{width:46px; height:104px; position:fixed; top:50%; left:50%; margin-left:-571px; margin-top:-52px; _position:absolute;   _top:expression(documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight)/2); _margin-top:0; z-index:2; background-image:url(../images/l_arr.png); background-repeat:no-repeat; display:block}
+#left-fixed-center a:hover{background-image:url(../images/l_arr_o.png); background-repeat:no-repeat; cursor:pointer}
+

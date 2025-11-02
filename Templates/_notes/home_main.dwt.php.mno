@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordkeyword" value="name:id;datatype:int,name:userid;datatype:int,name:SiteKeyWord;datatype:string,name:SiteDesc;datatype:blob,name:lang;datatype:string" />
+</info>

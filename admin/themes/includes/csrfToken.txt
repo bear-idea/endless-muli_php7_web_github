@@ -1,8 +1,0 @@
-var csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-//console.log(csrfToken); // 新增日誌輸出
-// 設置全局 AJAX 設置
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': csrfToken
-    }
-});

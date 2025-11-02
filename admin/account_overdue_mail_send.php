@@ -1,1 +1,0 @@
-<div style="font-size:64px; color:#F00">此功能已移除 沒更新沒用 不再寄信通知</div>

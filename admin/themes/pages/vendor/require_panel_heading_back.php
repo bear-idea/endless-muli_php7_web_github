@@ -1,1 +1,0 @@
-<div class="btn-group float-end mr-10px"><a href="<?php echo $prePage; ?>" data-bs-original-title="" data-bs-toggle="tooltip" data-bs-placement="top" class="text-nowrap btn btn-default btn-sm"><i class="fa fa-reply fa-fw"></i> 上一頁</a></div>

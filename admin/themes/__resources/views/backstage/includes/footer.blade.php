@@ -1,3 +1,0 @@
-<div id="footer" class="app-footer mx-0 px-0">
-    &copy; 2022 All Rights Reserved
-</div>

@@ -1,1 +1,0 @@
-<i class="fa fa-globe"></i> © <?php echo autoUpdatingCopyright(2009); ?> <a href="<?php echo $WebSiteDesignerCrossLink1; ?>" target="_blank"><font color="#FFFFFF"><?php echo $WebSiteDesignerCrossName1; ?></font></a>

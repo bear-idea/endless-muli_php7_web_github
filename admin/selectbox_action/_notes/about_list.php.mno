@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RecordAboutListItem" value="name:item_id;datatype:int,name:itemname;datatype:string" />
-	<infoitem key="UD_RecordAboutListShow" value="name:id;datatype:int,name:title;datatype:string" />
-</info>
